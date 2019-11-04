@@ -1,0 +1,239 @@
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+/*.selector-for-some-widget {*/
+/*    box-sizing: content-box;*/
+/*}*/
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0
+}
+
+header {
+    height: 7.5vh;
+    width: 100%;
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    top: 0;
+    background-color: rgb(95, 192, 205);
+}
+
+div.drape {
+    display: flex;
+    height: 6.6vh;
+    position: absolute;
+    top: 7.4vh;
+    width: 100%;
+    border-bottom: 1px solid rgb(225, 229, 231);
+    flex-direction: row;
+    align-items: center;
+}
+
+.col-8 {
+    height: 14.6vh;
+    border-bottom: 1px solid rgb(225, 229, 231);
+}
+
+.col-4 {
+    padding: 0;
+    height: 14.6vh;
+    border-bottom: 1px solid rgb(225, 229, 231);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    /*justify-content: center;*/
+
+}
+
+div.container {
+    position: relative;
+    top: 13.6vh;
+    height: 78.4vh;
+    overflow: auto;
+    display: block;
+}
+
+
+span {
+    display: inline-block;
+    background: url("../img/css_sprites.png") no-repeat;
+    /*background-size: 50%;*/
+}
+
+.icon1 {
+    background-position: -124px -70px;
+    /*background-size: 100px;*/
+    width: 24px;
+    height: 24px;
+    /*border: 1px solid black;*/
+    transform: scale(0.7);
+
+}
+
+/*home*/
+.icon2 {
+    background-position: -124px -10px;
+    width: 46px;
+    height: 40px;
+    transform: scale(0.5);
+    flex-shrink: 0;
+}
+
+/*people*/
+.icon3 {
+    background-position: -10px -124px;
+    width: 42px;
+    height: 41px;
+    transform: scale(0.5);
+    flex-shrink: 0;
+
+}
+
+.icon4 {
+    background-position: -72px -124px;
+    width: 19px;
+    height: 23px;
+    transform: scale(0.7);
+
+}
+
+/*write*/
+.icon5 {
+    background-position: -10px -10px;
+    width: 94px;
+    height: 94px;
+    transform: scale(0.5);
+}
+
+.outer {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.date {
+    width: 100%;
+    height: 33%;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    color: rgb(153, 153, 153);
+}
+
+.time {
+    margin-left: 22px;
+    width: 100%;
+    height: 34%;
+}
+
+main {
+    position: relative;
+    top: 50%;
+    transform: translate(0, -50%);
+}
+
+.address {
+    width: 100%;
+    height: 33%;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    color: rgb(153, 153, 153);
+}
+
+p.price {
+    margin-bottom: 0;
+    /*display: inline-block;*/
+    color: red;
+    font-size: 15px;
+    /*position: relative;*/
+    /*top :50%;*/
+    /*transform: translate(0,-50%);*/
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 8vh;
+    background-color: rgb(248, 250, 251);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    line-height: 0;
+}
+
+div.las {
+    text-align: center;
+    font-size: 1vh;
+    color: rgb(95, 192, 205);
+    height: 100%;
+
+}
+
+/*div.fon{*/
+/*position: relative;*/
+/*    top:-10px;*/
+/*}*/
+
+.employer {
+    width: 20%;
+    height: 80%;
+    border-radius: 10%;
+    border: 1px solid transparent;
+    background-color: rgb(85, 168, 179);
+    color: white;
+}
+
+.workers {
+    width: 20%;
+    height: 80%;
+    border-radius: 10%;
+    border: 1px solid transparent;
+    background-color: white;
+    color: rgb(95, 192, 205);
+}
+
+img {
+    position: absolute;
+    right: 10px;
+}
+
+.angle {
+    width: 15px;
+    height: 15px;
+    border-top: 2px solid rgb(95, 192, 205);
+    border-right: 2px solid rgb(95, 192, 205);
+    transform: rotate(45deg);
+    position: relative;
+    /*right: px;*/
+    /*display: inline-block;*/
+}
+
+select {
+    height: 100%;
+    width: 80%;
+    outline: none;
+    border: 0;
+    color: rgb(211, 211, 211);
+    float: right;
+}
+
+.but {
+    height: 80%;
+    width: 33.3%;
+    float: left;
+    border-right: 1px solid rgb(225, 229, 231);
+
+}
