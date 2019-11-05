@@ -248,6 +248,7 @@ select {
     border: 0;
     color: rgb(211, 211, 211);
     float: right;
+    background-color: white;
 }
 
 .but {
