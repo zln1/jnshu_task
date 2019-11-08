@@ -1,0 +1,358 @@
+
+
+/*@media screen and (max-width: 1400px) {*/
+/*    body{*/
+/*        width: 1400px;*/
+/*    }*/
+/*}*/
+* {
+    padding: 0;
+    margin: 0;
+}
+
+
+:root {
+    font-size: 20px;
+}
+/*html {*/
+/*    font-size : 20px;*/
+/*}*/
+@media only screen and (min-width: 401px){
+    html {
+        font-size: 25px !important;
+    }
+}
+@media only screen and (min-width: 428px){
+    html {
+        font-size: 26.75px !important;
+    }
+}
+@media only screen and (min-width: 481px){
+    html {
+        font-size: 30px !important;
+    }
+}
+@media only screen and (min-width: 569px){
+    html {
+        font-size: 35px !important;
+    }
+}
+@media only screen and (min-width: 641px){
+    html {
+        font-size: 40px !important;
+    }
+}
+
+html body {
+    background-color: rgb(41,189,224);
+
+}
+
+header {
+    /*display: inline-block;*/
+
+    height: 8vh;
+    width: 100%;
+    background-color: rgb(41,189,224);
+    position: relative;
+     padding: 3%;
+}
+div.outer {
+    /*margin-top: 3%;*/
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+
+div.three{
+    width: 29px;
+    height: 3px;
+    border-top: 3px solid white;
+    border-bottom: 3px solid white;
+    padding-top: 8px;
+    background: white;
+    padding-bottom: 8px;
+    background-clip: content-box;
+    box-sizing: content-box;
+    position: relative;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    /*margin-left: 30px;*/
+
+}
+div.one{
+    width: 39px;
+    height: 40px;
+    border: 3px solid white;
+    position: relative;
+    left: 23px;
+    box-sizing: content-box;
+
+    /*display: inline-block;*/
+    /*margin-top: 30px;*/
+    /*margin-left: 23px;*/
+}
+/**/
+
+
+header p{
+    /*margin-right: 10px;*/
+    display: inline-block;
+    font-size: 0.85rem;
+    color: white;
+    margin-bottom: 0;
+}
+
+.x div {
+    box-sizing: border-box;
+}
+.x {
+    /*margin: 100px auto;*/
+    width: 36px;
+    height: 36px;
+    transform: rotate(45deg);
+    position: relative;
+    right: 23px;
+
+}
+
+.x1 {
+    float: left;
+    width: 50%;
+    height: 50%;
+    border-bottom:  2px solid white;
+    border-right:  2px solid white;
+}
+
+.x2 {
+    float: left;
+    width: 50%;
+    height: 50%;
+    border-bottom:  2px solid white;
+    border-left:  2px solid white;
+}
+.x3 {
+    float: left;
+    width: 50%;
+    height: 50%;
+    border-top: 2px solid white ;
+    border-right:  2px solid white;
+}
+
+.x4{
+    float: left;
+    width: 50%;
+    height: 50%;
+    border-top: 2px solid white ;
+    border-left:  2px solid white;
+}
+.voice {
+
+     width: 100%;
+     height: 8vh;
+     background-color: rgb(185,233,245);
+     display: flex ;
+     flex-direction: row;
+     align-items: center;
+     justify-content: space-between;
+ }
+.controls {
+    width: 40px;
+    height: 40px;
+    padding: 0;
+    margin-right: 20px;
+}
+
+.play-pause {
+    border: 0;
+    outline: 0;
+    background: none;
+    vertical-align: middle;
+}
+
+.icon-play {
+    width: 50px;
+    height: 50px;
+    background: url(../img/play.png) no-repeat;
+    background-size: 50px;
+    display: block;
+    color: #478f59;
+}
+
+.icon-pause {
+    width: 50px;
+    height: 50px;
+    background: url(../img/pruse.png) no-repeat;
+    background-size: 50px;
+    display: block;
+    color: #478f59;
+}
+
+div.voice > span {
+    /*margin-left: 40px;*/
+    /*position: relative;*/
+    /*right: 40px;*/
+    /*left: 30px;*/
+    font-size: 0.65rem;
+    margin-left: 20px;
+}
+footer{
+    font-size: 1rem;
+    width: 100%;
+    height: 17vh;
+    background-color: rgb(41,189,224);
+   position: absolute;
+    bottom: 0;
+}
+.death {
+    height: 87px;
+    width: 77%;
+    background-color: rgb(251,180,53);
+    margin: 0 auto;
+    position: relative;
+    top :50%;
+    transform: translate(0,-50%);
+    font-size: 0.65rem;
+    text-align: center;
+    line-height: 87px;
+    color: rgb(255,255,255);
+}
+.container-outer{
+    height: 67vh;
+
+    overflow: auto;
+    padding-top: 90px;
+}
+
+.text {
+    font-size: 0.6rem;
+    color: white;
+    position: absolute;
+    top:18vh;
+    left: 11vw;
+    z-index: 100;
+}
+.container{
+    /*margin-top: 90px;*/
+    /*overflow: auto;*/
+
+    padding: 0;
+    width: 1170px;
+    max-width: none !important;
+    background-color: rgb(41,189,224);
+}
+
+/*.row {*/
+/*    height: 200px;*/
+/*    background-color: yellow;*/
+/*    border: 1px solid orange;*/
+/*}*/
+.col {
+    height: 30vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+.user{
+    width: 100%;
+     /*padding-top: 100%;*/
+    background-color: rgb(245,201,123);
+    border: 5px solid white;
+    /*margin-bottom: 15%;*/
+    overflow: hidden;
+}
+.user span {
+    font-size: 0.75rem;
+    display: block;
+    margin-top: calc((100% - 1.6rem)/2);
+    margin-bottom: calc((100% - 1.6rem)/2) ;
+    position: relative;
+    text-align: center;
+
+}
+.user-bottom {
+    font-size: 0.569rem;
+    height: 55%;
+    width: 100%;
+    background-color: rgb(131,176,154);
+    text-align: center;
+    color: white;
+}
+
+
+.user-outer{
+    width: 70%;
+    height: 100%;
+    margin: 0 auto;
+
+
+
+}
+.user:hover ~ .icon {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between ;
+}
+img {
+    position: absolute;
+    top:16vh;
+    left: 11vw;
+
+}
+
+
+.icon {
+    z-index: 10;
+    height: 25%;
+    width: 100%;
+    display: none;
+
+
+}
+
+.icon span {
+    z-index: 10;
+    display: inline-block;
+    background: url("../img/css7_sprites.png") no-repeat;
+}
+
+span.icon1-vote{
+    background-position: -10px -10px;
+    width: 30px;
+    height: 30px;
+    max-width: 100%;
+    max-height: 100%;
+
+}
+
+span.icon2-vote{
+    background-position:  -60px -10px;
+    width: 30px;
+    height: 30px;
+
+
+
+}
+span.icon3-vote{
+    background-position:  -10px -60px;
+    width: 30px;
+    height: 30px;
+
+
+
+}
+span.icon4-vote{
+    background-position:  -60px -60px;
+    width: 30px;
+    height: 30px;
+
+
+}

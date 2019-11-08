@@ -203,7 +203,6 @@ div.las {
 .btn-group{
     width: 50vw;
     height: 80%;
-
     border: 1px solid transparent;
 }
 
@@ -212,6 +211,7 @@ div.las {
      border-bottom-left-radius: 0.25rem;
      position: relative;
      right: 6px;
+
     background-color: white;
     color: rgb(95, 192, 205);
 }

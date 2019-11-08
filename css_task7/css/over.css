@@ -1,0 +1,151 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+ html, body {
+    width: 100%;
+    height: 100%;
+}
+
+@media only screen and (min-width: 401px){
+    html {
+        font-size: 25px !important;
+    }
+}
+@media only screen and (min-width: 428px){
+    html {
+        font-size: 26.75px !important;
+    }
+}
+@media only screen and (min-width: 481px){
+    html {
+        font-size: 30px !important;
+    }
+}
+@media only screen and (min-width: 569px){
+    html {
+        font-size: 35px !important;
+    }
+}
+@media only screen and (min-width: 641px){
+    html {
+        font-size: 40px !important;
+    }
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 8.5% ;
+    width: 100%;
+    color: #ffffff;
+    background-color: #29bde0;
+}
+header img {
+    margin: 0 30px;
+}
+div.container{
+    width: 100%;
+    height: 56.6%;
+    background-color: #29bde0;
+}
+div.show {
+    width: 100%;
+    height: 60%;
+    padding-top: 30px;
+}
+
+div.data {
+    width: 100%;
+    height: 40%;
+    font-size: 0.65rem;
+    color: #ffffff;
+
+}
+
+.show img {
+    display: block;
+    margin: 0 auto;
+}
+
+strong {
+
+    display: block;
+    font-size: 0.825rem;
+    color: #ffc865;
+    margin: 0.25rem 2.5rem;
+}
+.data p {
+
+    margin: 0.75rem 2.5rem;
+}
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 11.8%;
+    width: 100%;
+    background-color: rgba(153,223,240,0.5);
+
+
+    position: absolute;
+    bottom: 0;
+}
+
+button {
+    width: 42.3%;
+    height: 86px;
+    border: none;
+    border-radius: 5%;
+    color: #ffffff;
+    font-size: 40px;
+}
+button.again {
+    background-color: #f66f6f;
+
+}
+
+button.uploading{
+    background-color: #fbb435;
+}
+button:hover {
+    outline: none;
+}
+.record {
+    height: 34%;
+    overflow: hidden;
+}
+
+.one-day {
+    height: 164px;
+    width: auto;
+    border-top: 2px solid #dddddd;
+    border-bottom: 2px solid #dddddd;
+}
+.time {
+    display: flex;
+    justify-content: space-between;
+    height: 30%;
+    width: 460px;
+    margin: 4px auto;
+
+}
+.when-day{
+   font-size: 0.75rem;
+    color: black;
+}
+.when-time{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    color: #c7c7c7;
+}
+
+.one-day p {
+    width: 460px;
+    font-size: 0.6rem;
+    color: #a6a6a6;
+    margin: 0 auto;
+}
