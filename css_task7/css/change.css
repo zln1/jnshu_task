@@ -7,6 +7,48 @@ html,body {
     width: 100%;
     height: 100%;
 }
+@media only screen and (min-width: 401px){
+    html {
+        font-size: 25px !important;
+    }
+}
+@media only screen and (min-width: 428px){
+    html {
+        font-size: 26.75px !important;
+    }
+}
+@media only screen and (min-width: 481px){
+    html {
+        font-size: 30px !important;
+    }
+}
+@media only screen and (min-width: 569px){
+    html {
+        font-size: 35px !important;
+    }
+}
+@media only screen and (min-width: 641px){
+    html {
+        font-size: 40px !important;
+    }
+}
+
+@media only screen and (min-width: 768px){
+    html {
+        font-size: 48px !important;
+    }
+}
+
+@media only screen and (min-width: 1024px){
+    html {
+        font-size: 64px !important;
+    }
+}
+@media only screen and (min-width: 1440px){
+    html {
+        font-size: 90px !important;
+    }
+}
 
 
 body{
@@ -38,7 +80,7 @@ header {
 
 
 .last_game{
-    font-size: 30px;
+    font-size: 0.85rem;
     width: 90vw;
     height: 10vh;
     color: rgb(180,180,180);
@@ -53,7 +95,7 @@ header {
 
 .content{
     width: 90vw;
-    height: 70%;
+    height: 75%;
     margin: 2.46vh auto 0 auto;
     border: 1px solid rgb(233,233,233);
     background-color: white;
@@ -61,7 +103,7 @@ header {
 }
 
 div.game_name{
-    font-size: 38px;
+    font-size: 0.95rem;
     width: 100%;
     height: 8.2vh;
     border-bottom: 2px solid rgb(254,232,192);
@@ -79,7 +121,7 @@ div.version{
 }
 
 div.version_title{
-    font-size: 32px;
+    font-size: 0.8rem;
     color: white;
     width: 100%;
     height: 72.3%;
@@ -91,7 +133,7 @@ div.version_title{
 p.text{
     width: 100%;
      color: rgb(170,170,170);
-    font-size: 25px;
+    font-size: 0.625rem;
     position: absolute;
     bottom: 0;
     margin: 0 auto;
@@ -111,10 +153,10 @@ p.title {
 div.triangle{
     display: inline-block;
 
-    width: 30px;
-    height: 30px;
-    border-top: 5px solid rgb(231,231,231);
-    border-right: 5px solid rgb(231,231,231);
+    width: 0.75rem;
+    height: 0.75rem;
+    border-top: 0.125rem solid rgb(231,231,231);
+    border-right: 0.125rem solid rgb(231,231,231);
     transform: rotate(45deg);
      position: absolute;
     right: 10%;
@@ -126,22 +168,23 @@ img {
     position: absolute;
     top: 55%;
     right: 8%;
+    width: 0.8rem;
 }
 div.circle {
      display: inline-block;
-    width: 20px;
-    height: 20px;
+    width:0.5rem;
+    height: 0.5rem;
     border-radius: 100%;
     background-color: rgb(240,240,240);
-    margin-left: 10px;
+    margin-left: 0.20rem;
 
 }
 div.circles{
     position: absolute;
-    bottom: 100px;
+    bottom: 2.5rem;
     left: 50%;
-    height: 20px;
-    width: 150px;
+    height: 0.5rem;
+    width: 3.75rem;
     transform: translate(-50%,0);
 
 }

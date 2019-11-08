@@ -5,7 +5,9 @@
  html, body {
     width: 100%;
     height: 100%;
-}
+     overflow-y: hidden;
+
+ }
 
 @media only screen and (min-width: 401px){
     html {
@@ -37,7 +39,7 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    height: 8.5% ;
+    height: 7% ;
     width: 100%;
     color: #ffffff;
     background-color: #29bde0;
@@ -47,13 +49,13 @@ header img {
 }
 div.container{
     width: 100%;
-    height: 56.6%;
+    height: auto;
     background-color: #29bde0;
 }
 div.show {
     width: 100%;
     height: 60%;
-    padding-top: 30px;
+    padding-top: 0.75rem;
 }
 
 div.data {
@@ -67,6 +69,7 @@ div.data {
 .show img {
     display: block;
     margin: 0 auto;
+    width: 8.75rem;
 }
 
 strong {
@@ -74,11 +77,13 @@ strong {
     display: block;
     font-size: 0.825rem;
     color: #ffc865;
-    margin: 0.25rem 2.5rem;
+    padding: 1rem 2.5rem;
+    /*margin: 0.25rem 2.5rem;*/
 }
 .data p {
-
-    margin: 0.75rem 2.5rem;
+    line-height: 1rem;
+    padding: 1rem 2.5rem;
+    /*margin: 0.75rem 2.5rem;*/
 }
 footer {
     display: flex;
@@ -87,23 +92,21 @@ footer {
     height: 11.8%;
     width: 100%;
     background-color: rgba(153,223,240,0.5);
-
-
     position: absolute;
     bottom: 0;
 }
 
 button {
     width: 42.3%;
-    height: 86px;
+    height: 2.1rem;
     border: none;
     border-radius: 5%;
     color: #ffffff;
-    font-size: 40px;
+    font-size: 1rem;
 }
 button.again {
+    height: 2.1rem;
     background-color: #f66f6f;
-
 }
 
 button.uploading{
@@ -113,25 +116,24 @@ button:hover {
     outline: none;
 }
 .record {
-    height: 34%;
+    height: 37%;
     overflow: hidden;
 }
 
 .one-day {
-    height: 164px;
+    height: 4.125rem;
     width: auto;
-    border-top: 2px solid #dddddd;
-    border-bottom: 2px solid #dddddd;
+    border-top: 0.05rem solid #dddddd;
+    border-bottom: 0.05rem solid #dddddd;
 }
 .time {
     display: flex;
     justify-content: space-between;
     height: 30%;
-    width: 460px;
-    margin: 4px auto;
-
+    width: 11.5rem;
 }
 .when-day{
+    padding: 0 2.5rem;
    font-size: 0.75rem;
     color: black;
 }
@@ -139,13 +141,14 @@ button:hover {
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 20px;
+    font-size: 0.5rem;
     color: #c7c7c7;
 }
 
 .one-day p {
-    width: 460px;
+    width: 11.5rem;
     font-size: 0.6rem;
     color: #a6a6a6;
-    margin: 0 auto;
+    margin: 0 2.5rem;
+    line-height: 1rem;
 }
