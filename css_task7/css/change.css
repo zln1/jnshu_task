@@ -3,10 +3,10 @@
     padding: 0;
     margin: 0;
 }
-html,body {
-    width: 100%;
-    height: 100%;
-}
+/*html ,body {*/
+/*    width: 100%;*/
+/*    height: 100%;*/
+/*}*/
 @media only screen and (min-width: 401px){
     html {
         font-size: 25px !important;
@@ -39,16 +39,16 @@ html,body {
     }
 }
 
-@media only screen and (min-width: 1024px){
-    html {
-        font-size: 64px !important;
-    }
-}
-@media only screen and (min-width: 1440px){
-    html {
-        font-size: 90px !important;
-    }
-}
+/*@media only screen and (min-width: 1024px){*/
+/*    html {*/
+/*        font-size: 64px !important;*/
+/*    }*/
+/*}*/
+/*@media only screen and (min-width: 1440px){*/
+/*    html {*/
+/*        font-size: 90px !important;*/
+/*    }*/
+/*}*/
 
 
 body{
@@ -82,12 +82,12 @@ header {
 .last_game{
     font-size: 0.85rem;
     width: 90vw;
-    height: 10vh;
+    height: 2.25rem;
     color: rgb(180,180,180);
     border: 1px solid rgb(232,232,232);
     margin: 2.46vh  auto 0 auto;
     background-color: white;
-    line-height: 10vh;
+    line-height: 2.25rem;
     text-align: center;
     position: relative;
 
@@ -95,7 +95,7 @@ header {
 
 .content{
     width: 90vw;
-    height: 75%;
+    /*height: 75%;*/
     margin: 2.46vh auto 0 auto;
     border: 1px solid rgb(233,233,233);
     background-color: white;
@@ -105,18 +105,18 @@ header {
 div.game_name{
     font-size: 0.95rem;
     width: 100%;
-    height: 8.2vh;
+    height: 2.255rem;
     border-bottom: 2px solid rgb(254,232,192);
     color: rgb(254,220,163);
     text-align:center;
-    line-height: 8.2vh;
+    line-height: 2.255rem;
 }
 div.version{
-    height: 23%;
+    height: 20vh;
     width: 72vw;
     margin: 3.7% auto;
     text-align: center;
-    position: relative;
+    /*position: relative;*/
     padding: 0 auto;
 }
 
@@ -134,11 +134,11 @@ p.text{
     width: 100%;
      color: rgb(170,170,170);
     font-size: 0.625rem;
-    position: absolute;
-    bottom: 0;
+    /*position: absolute;*/
+    /*bottom: 0;*/
     margin: 0 auto;
     left: 50%;
-    transform: translate(-50%,0);
+    /*transform: translate(-50%,0);*/
     /*padding: 0;*/
     /*left: 50%;*/
 }
