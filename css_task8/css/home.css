@@ -1,0 +1,232 @@
+
+
+
+
+
+
+/*首页轮播图--bootstrap组件*/
+
+div.carousel.slide{
+    margin-bottom: 155px;
+}
+
+.carousel-indicators li {
+    width: 14px;
+    height: 14px;
+    border: 1px solid white;
+    border-radius: 100%;
+    background-color: transparent;
+}
+.active {
+    background-color: white !important;
+}
+
+/*some icon*/
+/*div.container{*/
+/*    margin-top: 155px;*/
+/*}*/
+
+.container span {
+    display: inline-block;
+    background: url("../img/home_sprites.png") no-repeat;
+    background-size: 188px 176px;
+}
+.container span.home-icon-rocket {
+    background-position: -90px -10px;
+    width: 43px;
+    height: 62px;
+}
+
+.container span.home-icon-archive {
+    background-position: -10px -10px;
+    width: 60px;
+    height: 48px;
+}
+.container span.home-icon-contacts {
+    background-position: -10px -78px;
+    width: 52px;
+    height: 55px;
+}
+.container span.people-icon {
+    background-position: -10px -153px;
+    width: 13px;
+    height: 13px;
+}
+.home-tag{
+    height: 264px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.home-tag-title {
+    font-size: 18px;
+}
+
+.home-tag-content {
+    color: #999999;
+    font-size: 16px;
+    height: 1px;
+}
+
+div.col.top-div{
+    border-left: 1px dashed #dedede;
+
+}
+.home-tag.num {
+    width: 210px;
+    justify-content: center;
+    font-size: 18px;
+    color: #26a26f;
+}
+
+div.num {
+    margin: 20px 0;
+    width: 200px;
+}
+
+
+/*++++++++++++++++++++++++++++++++++++++++++++(如何学习---START)++++++++++++++++++++++++++++++++++++++++++++++++*/
+strong.home-title{
+    display: block;
+    margin-top: 130px;
+    font-size: 18px;
+    text-align: center;
+    margin-bottom: 50px;
+}
+.cir-numb {
+    display: inline-block;
+    width: 70px;
+    height: 70px;
+    border-radius: 100%;
+    background-color: white;
+    border: 1px solid #f0f0f0;
+    font-size: 18px;
+    color: #29b078;
+    text-align: center;
+    line-height: 70px;
+}
+p.how-study-content{
+    display: inline-block;
+    width: 150px;
+    font-size: 14px;
+    color: #29b078;
+    margin: 0 1px;
+}
+
+
+div.col.how-to-study{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 100px;
+}
+div.col.how-to-study .home-small-icon{
+    background-position: -90px -92px;
+    width: 32px;
+    height: 30px;
+}
+
+/*++++++++++++++++++++++++++++++++++++++++++++(如何学习---END)++++++++++++++++++++++++++++++++++++++++++++++++*/
+
+/*++++++++++++++++++++++++++++++++++++++++++++(学员展示---start)++++++++++++++++++++++++++++++++++++++++++++++++*/
+div.good-show{
+    display: flex;
+    height: 369px;
+    border: 1px solid #eeeded;
+    background-color: #ffffff;
+    border-radius: 5%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.good-show-photo {
+
+}
+
+.good-show-title{
+    display: block;
+    font-size: 18px;
+}
+
+.good-show-content{
+    font-size: 16px;
+    color: #999999;
+    padding: 0 30px;
+}
+
+/*++++++++++++++++++++++++++++++++++++++++++++(学员展示---END)++++++++++++++++++++++++++++++++++++++++++++++++*/
+
+div.four-point{
+  text-align: center;
+    margin-top: 23px;
+}
+div.point-of-one{
+    display: inline-block;
+    width: 13px;
+    height: 13px;
+    border-radius: 100%;
+    border: 1px solid #e2e2e2;
+}
+div.point-of-one:hover{
+    background-color: #29b078;
+
+}
+
+
+
+
+/*++++++++++++++++++++++++++++++++++++++++++++(战略合作企业---START)++++++++++++++++++++++++++++++++++++++++++++++++*/
+div.container.partner{
+    border: 1px solid #eeeded;
+    background-color: white;
+
+}
+
+div.home-partner-img:hover {
+    border-left: 1px solid #eeeded;
+    border-right: 1px solid #eeeded;
+
+}
+
+/*++++++++++++++++++++++++++++++++++++++++++++(战略合作企业---END)++++++++++++++++++++++++++++++++++++++++++++++++*/
+div.container-bottom{
+    height: 100%;
+    background-color: #ffffff;
+
+}
+div.container.friend-link{
+    margin-top: 93px;
+    height: 134px;
+}
+
+strong.friend-title{
+    display: block;
+    text-align: center;
+    font-size: 18px;
+    height: 100%;
+    line-height: 50px;
+
+
+}
+div.col.title-bottom{
+    height: 50px;
+
+}
+div.container.friend-link li {
+    height: 30px;
+    font-size: 14px;
+    color: #999999;
+    line-height: 30px;
+}
+
+div.row.friend-link{
+}
+
+div.container.friend-link li:hover{
+    border-bottom: 1px solid #999999;
+}
+
+
