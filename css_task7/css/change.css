@@ -7,36 +7,8 @@
 /*    width: 100%;*/
 /*    height: 100%;*/
 /*}*/
-@media only screen and (min-width: 401px){
-    html {
-        font-size: 25px !important;
-    }
-}
-@media only screen and (min-width: 428px){
-    html {
-        font-size: 26.75px !important;
-    }
-}
-@media only screen and (min-width: 481px){
-    html {
-        font-size: 30px !important;
-    }
-}
-@media only screen and (min-width: 569px){
-    html {
-        font-size: 35px !important;
-    }
-}
-@media only screen and (min-width: 641px){
-    html {
-        font-size: 40px !important;
-    }
-}
-
-@media only screen and (min-width: 768px){
-    html {
-        font-size: 48px !important;
-    }
+:root {
+    font-size: 20px;
 }
 
 /*@media only screen and (min-width: 1024px){*/
@@ -75,7 +47,6 @@ header {
     position: absolute;
     bottom:21px;
     left: 22px;
-
 }
 
 
@@ -152,7 +123,6 @@ p.title {
 
 div.triangle{
     display: inline-block;
-
     width: 0.75rem;
     height: 0.75rem;
     border-top: 0.125rem solid rgb(231,231,231);

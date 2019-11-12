@@ -1,12 +1,40 @@
+@media only screen and (max-width: 768px) {
+    header .container {
+        display: none;
+    }
 
+    /*ul.header-nav-list{*/
+    /*    display: none !important;*/
+    /*}*/
+    ul.header-nav-list li {
+        display: block !important;
+    }
 
+    ul.header-nav-list {
+        width: 100%;
+        display: none;
+        flex-direction: column;
+    }
+    button.my-button {
+        visibility: visible !important;
+    }
 
+}
 
+button.my-button {
+    visibility: hidden;
+    background: black;
+    border: 0;
+    padding: 1px 1px 2px 1px;
+    border-radius: 10%;
+    outline: none;
+
+}
 
 
 /*首页轮播图--bootstrap组件*/
 
-div.carousel.slide{
+div.carousel.slide {
     margin-bottom: 155px;
 }
 
@@ -17,6 +45,7 @@ div.carousel.slide{
     border-radius: 100%;
     background-color: transparent;
 }
+
 .active {
     background-color: white !important;
 }
@@ -26,11 +55,12 @@ div.carousel.slide{
 /*    margin-top: 155px;*/
 /*}*/
 
-.container span {
+.container .row .col span {
     display: inline-block;
     background: url("../img/home_sprites.png") no-repeat;
     background-size: 188px 176px;
 }
+
 .container span.home-icon-rocket {
     background-position: -90px -10px;
     width: 43px;
@@ -42,17 +72,20 @@ div.carousel.slide{
     width: 60px;
     height: 48px;
 }
+
 .container span.home-icon-contacts {
     background-position: -10px -78px;
     width: 52px;
     height: 55px;
 }
+
 .container span.people-icon {
     background-position: -10px -153px;
     width: 13px;
     height: 13px;
 }
-.home-tag{
+
+.home-tag {
     height: 264px;
     display: flex;
     flex-direction: column;
@@ -70,10 +103,11 @@ div.carousel.slide{
     height: 1px;
 }
 
-div.col.top-div{
+div.col.top-div {
     border-left: 1px dashed #dedede;
 
 }
+
 .home-tag.num {
     width: 210px;
     justify-content: center;
@@ -88,13 +122,14 @@ div.num {
 
 
 /*++++++++++++++++++++++++++++++++++++++++++++(如何学习---START)++++++++++++++++++++++++++++++++++++++++++++++++*/
-strong.home-title{
+strong.home-title {
     display: block;
     margin-top: 130px;
     font-size: 18px;
     text-align: center;
     margin-bottom: 50px;
 }
+
 .cir-numb {
     display: inline-block;
     width: 70px;
@@ -107,7 +142,8 @@ strong.home-title{
     text-align: center;
     line-height: 70px;
 }
-p.how-study-content{
+
+p.how-study-content {
     display: inline-block;
     width: 150px;
     font-size: 14px;
@@ -116,13 +152,14 @@ p.how-study-content{
 }
 
 
-div.col.how-to-study{
+div.col.how-to-study {
     display: flex;
     align-items: center;
     justify-content: space-around;
     height: 100px;
 }
-div.col.how-to-study .home-small-icon{
+
+div.col.how-to-study .home-small-icon {
     background-position: -90px -92px;
     width: 32px;
     height: 30px;
@@ -131,7 +168,7 @@ div.col.how-to-study .home-small-icon{
 /*++++++++++++++++++++++++++++++++++++++++++++(如何学习---END)++++++++++++++++++++++++++++++++++++++++++++++++*/
 
 /*++++++++++++++++++++++++++++++++++++++++++++(学员展示---start)++++++++++++++++++++++++++++++++++++++++++++++++*/
-div.good-show{
+div.good-show {
     display: flex;
     height: 369px;
     border: 1px solid #eeeded;
@@ -146,12 +183,12 @@ div.good-show{
 
 }
 
-.good-show-title{
+.good-show-title {
     display: block;
     font-size: 18px;
 }
 
-.good-show-content{
+.good-show-content {
     font-size: 16px;
     color: #999999;
     padding: 0 30px;
@@ -159,27 +196,27 @@ div.good-show{
 
 /*++++++++++++++++++++++++++++++++++++++++++++(学员展示---END)++++++++++++++++++++++++++++++++++++++++++++++++*/
 
-div.four-point{
-  text-align: center;
+div.four-point {
+    text-align: center;
     margin-top: 23px;
 }
-div.point-of-one{
+
+div.point-of-one {
     display: inline-block;
     width: 13px;
     height: 13px;
     border-radius: 100%;
     border: 1px solid #e2e2e2;
 }
-div.point-of-one:hover{
+
+div.point-of-one:hover {
     background-color: #29b078;
 
 }
 
 
-
-
 /*++++++++++++++++++++++++++++++++++++++++++++(战略合作企业---START)++++++++++++++++++++++++++++++++++++++++++++++++*/
-div.container.partner{
+div.container.partner {
     border: 1px solid #eeeded;
     background-color: white;
 
@@ -192,17 +229,18 @@ div.home-partner-img:hover {
 }
 
 /*++++++++++++++++++++++++++++++++++++++++++++(战略合作企业---END)++++++++++++++++++++++++++++++++++++++++++++++++*/
-div.container-bottom{
+div.container-bottom {
     height: 100%;
     background-color: #ffffff;
 
 }
-div.container.friend-link{
+
+div.container.friend-link {
     margin-top: 93px;
     height: 134px;
 }
 
-strong.friend-title{
+strong.friend-title {
     display: block;
     text-align: center;
     font-size: 18px;
@@ -211,10 +249,12 @@ strong.friend-title{
 
 
 }
-div.col.title-bottom{
+
+div.col.title-bottom {
     height: 50px;
 
 }
+
 div.container.friend-link li {
     height: 30px;
     font-size: 14px;
@@ -222,10 +262,10 @@ div.container.friend-link li {
     line-height: 30px;
 }
 
-div.row.friend-link{
+div.row.friend-link {
 }
 
-div.container.friend-link li:hover{
+div.container.friend-link li:hover {
     border-bottom: 1px solid #999999;
 }
 

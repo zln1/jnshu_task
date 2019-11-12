@@ -6,17 +6,57 @@
     <title>
         demo
     </title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="../css/demo.css">
+    <link rel="script" href="../js/task7.js">
 </head>
 <body>
-     <div class="container">
-         <div class="row">
-             <div class="col">
+     <div class="father">
+         <div class="son">
 
-             </div>
+             <button type="button"  id="btn" >
+                 点我
+             </button>
+             <ul id="demo" class="haha">
+                 <li>
+                     纳斯达克附近
+                 </li>
+                 <li>
+                     asfdasdfkosjd
+                 </li>
+                 <li>
+                     奥数的发生哦啊
+                 </li>
+             </ul>
          </div>
      </div>
+
+<script>
+
+    // function myfunction() {
+    //
+    //
+
+    // }
+
+
+  document.getElementById("btn").onclick=displayOn;
+  function displayOn() {
+
+          // document.getElementById("demo").style.display="block";
+      if (document.getElementById("demo").style.display=="block"){
+          document.getElementById("demo").style.display="none";
+      }else {
+          document.getElementById("demo").style.display="block";
+
+      }
+  }
+
+
+
+
+
+</script>
 </body>
+
 
 </html>

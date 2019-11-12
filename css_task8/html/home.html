@@ -17,32 +17,42 @@
             crossorigin="anonymous"></script>
     <link rel="stylesheet" type="text/css" href="../css/home.css">
     <link rel="stylesheet" type="text/css" href="../css/public.css">
+    <link rel="script" href="../js/task8.js">
 
 </head>
 <body>
 <header>
-    <div class=""></div>
-    <div class="img-wrap">
-        <span class="service-tel">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4 hidden-xs ">
+               <span class="service-tel">
             客服热线：010-594-78634
-        </span>
-        <div class="header-icon">
-            <span class="icon-chat"></span>
-            <span class="icon-wei-bo"></span>
-            <span class="icon-qq"></span>
+               </span>
+            </div>
+            <div class="col-md-8 ">
+                <div class="header-icon">
+                    <span class="icon-chat"></span>
+                    <span class="icon-wei-bo"></span>
+                    <span class="icon-qq"></span>
+                </div>
+            </div>
         </div>
     </div>
+
     <div class="header-nav-wrap">
-        <ul class="header-nav-list">
+        <button class="my-button"  type="button" onclick="myfunction()">
+            <img src="../img/menu.png">
+        </button>
+        <ul class="header-nav-list" id="my-ul">
             <li>
-            <a href="home.html">首页</a>
+                <a href="home.html">首页</a>
             </li>
             <li>
-            <a href="job.html">职业</a>
+                <a href="job.html">职业</a>
             </li>
             <li>
                 <a href="partner.html"> 推荐</a>
-               </li>
+            </li>
             <li>关于</li>
         </ul>
     </div>
@@ -344,5 +354,17 @@
 <div class="footer-bottom">
     Copyright © 2015 北京葡萄藤信息技术有限公司 All Rights Reserved | 京ICP备15035574号-1
 </div>
+
+<script>
+    function myfunction() {
+
+        if (document.getElementById("my-ul").style.display == "block") {
+            document.getElementById("my-ul").style.display = "none";
+        } else {
+
+            document.getElementById("my-ul").style.display = "block";
+        }
+    }
+</script>
 </body>
 </html>
