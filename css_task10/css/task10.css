@@ -1,0 +1,389 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body,html {
+    width: 100%;
+}
+
+header {
+    display: flex;
+    align-self: center;
+    justify-content: space-around;
+    height: 40px;
+    background-color: #1d7ad9;
+    width: 100%;
+}
+
+
+span.hot-line {
+    line-height: 40px;
+    color: #ffffff;
+    font-size: 14px;
+}
+
+div.btn-group {
+    display: inline-block;
+}
+
+.btn{
+    background-color: #1d7ad9;
+    color: #ffffff;
+    font-size: 16px;
+    height: 100%;
+    outline: none;
+    border: 1px solid transparent;
+}
+.btn:hover {
+    border-right: 1px solid #ffffff;
+    border-left: 1px solid #ffffff;
+
+}
+
+
+button.btn-log-in {
+}
+
+button.btn-register {
+}
+
+div.menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding-left: 100px ;
+    height: 100px;
+    background-color: #f9f9f9;
+    margin-bottom: 35px;
+}
+
+ul.menu-group {
+    font-size: 16px;
+}
+
+ul.menu-group li {
+    display: inline-block;
+    background-color: #ffffff;
+    padding: 14px 17px;
+    margin-right: 60px;
+    border-radius: 5px;
+}
+ul.menu-group li:hover {
+    background-color: #1d7ad9;
+}
+
+
+
+.coin-finish {
+    display: inline-block;
+    background-color: #ff7f02;
+}
+
+
+.flow-name{
+    padding: 10px 0;
+    font-size: 18px;
+}
+.flow-name-finish {
+    color:  #ff7f02;
+}
+.flow-name-un-finish{
+    color: #cccccc;
+}
+
+
+.coin{
+    display: inline-block;
+    background-color: #cccccc;
+}
+
+div.step-icon {
+    display: flex;
+    align-items: center;
+    color: #ffffff;
+}
+div.circle-coin {
+    text-align: center;
+    line-height: 24px;
+    width: 24px;
+    height: 24px;
+    border-radius: 100%;
+    font-size: 14px;
+}
+div.line-coin {
+    width: 69px;
+    height: 5px;
+    border-radius: 4%;
+}
+
+div.step-outer-con{
+    display: flex;
+    justify-content: space-around;
+}
+div.container {
+    display: flex;
+    align-items: center;
+}
+
+
+
+div.step-outer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+
+div.icon-custom {
+    display: inline-block;
+    width: 4px;
+    height: 22px;
+    background-color: #1d7ad9;
+    border-radius: 1px;
+    margin-right: 10px;
+}
+
+div.tips {
+    font-size: 22px;
+    padding: 50px 0 20px 0;
+
+}
+
+div.icon-custom-outer{
+    display: flex;
+    align-items: center;
+}
+
+div.main {
+    width: 70vw;
+    margin: 0 auto 54px auto;
+}
+div.form-container {
+
+}
+
+div.style-title {
+    padding: 14px;
+    background-color: #f4f4f4;
+    color: #1d7ad9;
+    font-size: 18px;
+}
+div.style-title img{
+    vertical-align: -2px;
+}
+div.style-content {
+    border: 1px solid #e8e8e8;
+    border-top: 0 none;
+    border-bottom: 0 none;
+    position: relative;
+    background-color: #fbfcff;
+    padding-right: 127px;
+}
+
+
+div.main label {
+    display: inline-block;
+    margin: 30px;
+    align-items: center;
+}
+
+div.main input[type="radio"]{
+    display: none;
+}
+div.main input + label:before{
+    content: "";
+    display: inline-block;
+    width:16px;
+    height: 16px;
+    border-radius: 100%;
+    border: 1px solid #d6d6d6;
+    margin-right: 17px;
+}
+div.main  input:checked + label:before{
+    width: 4px;
+    height: 4px;
+    border: 7px solid #1d7ad9;
+}
+
+
+
+
+div.one-contain{
+    display: inline-block;
+/*display: block;*/
+}
+
+
+
+div.style-content-one {
+    display: flex;
+    align-items: center;
+    margin: 36px 18px;
+    font-size: 18px;
+}
+div.style-content-one-outer {
+     display: flex;
+     align-items: center;
+     margin: 0 36px 36px 36px;
+     font-size: 18px;
+ }
+div.style-content-one-inner {
+    display: flex;
+    align-items: center;
+    margin:36px;
+    font-size: 18px;
+}
+
+div.size-title{
+
+}
+
+div.size-content {
+    font-size: 18px;
+    border: 1px solid #e8e8e8;
+    border-top: 0 none;
+    border-bottom: 0 none;
+    position: relative;
+    background-color: #fbfcff;
+    padding-right: 127px;
+
+
+}
+div.size-content input{
+    margin: 0 4px 0 8px;
+    width: 68px;
+    height: 28px;
+    border: 1px solid #e8e8e8;
+    background-color: #fbfcff;
+}
+
+div.material-title {
+
+}
+
+div.material-content {
+    background-color: #fbfcff;
+    font-size: 18px;
+
+}
+div.next-content {
+    border: 1px solid #e7e7e7;
+    text-align: center;
+}
+
+button.next{
+    width: 179px;
+    height: 46px;
+    background: #e15053;
+    font-size: 24px;
+    margin: 143px 0 97px 0;
+    color: #ffffff;
+    border: 0 none;
+    border-radius: 5px;
+
+
+}
+
+
+div.annulus {
+    display: inline-block;
+    width: 4px;
+    height: 4px;
+    border-radius: 100%;
+    border: 7px solid #1d7ad9;
+    margin-right: 17px;
+}
+
+div.circle{
+    display: inline-block;
+    width:16px;
+    height: 16px;
+    border-radius: 100%;
+    border: 1px solid #d6d6d6;
+    margin-right: 17px;
+}
+
+select.details {
+    width: 127px;
+    height: 37px;
+    font-size: 14px;
+    color: #999999;
+}
+select {
+    appearance: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    background: url("../img/icon.jpg")no-repeat scroll 97px center transparent;
+    text-align-last: left;
+    padding-left: 20px;
+    /*display: block;*/
+    float: right;
+    position: absolute;
+    top:50%;
+    right: 10px;
+    transform: translate(0,-50%);
+}
+
+.od {
+
+}
+.in-d {
+}
+
+div.input-container {
+    display: inline-block;
+    margin: 30px;
+}
+
+div.footer-main{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 206px;
+    background-color: #f9f9f9 ;
+    color: #999999;
+}
+div.footer-anther {
+    text-align: center;
+    line-height: 33px;
+    height: 33px;
+    background-color: #1d7ad9;
+}
+
+div.footer-main-title {
+    display: inline-block;
+    font-size: 18px;
+
+}
+
+div.footer-main-link{
+    display: inline-block;
+    font-size: 14px;
+    width: 300px;
+
+}
+div.footer-main-link li {
+    display: inline-block;
+    margin: 0 40px 22px 0;
+}
+div.contact-way{
+    display: flex;
+    flex-direction: column;
+    font-size: 14px;
+}
+div.contact-way span {
+    margin: 7px ;
+}
+
+
+div.contact-way-container {
+    display: flex;
+
+}
+div.outer-patch {
+    height: 100px;
+}
+
+

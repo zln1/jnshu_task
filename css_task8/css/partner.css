@@ -1,3 +1,22 @@
+@media only screen and (max-width: 1150px) {
+
+    .containers{
+        flex-direction: column;
+    }
+    p.job-lead{
+        padding: 4px 0 10px 4px  !important;
+    }
+    div.bus-list {
+        margin: 0 auto !important;
+    }
+    div.partner-content{
+        width: 100% !important;
+    }
+}
+
+
+
+
 div.top img {
      width: 100%;
     height: 100%;

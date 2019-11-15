@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>task10</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scale=1">
+<!--    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">-->
+    <link rel="stylesheet" type="text/css" href="../css/task10.css">
+</head>
+
+<body>
+<header>
+    <span class="hot-line">客服热线：010-594-78634</span>
+    <div class="btn-group">
+        <button class="btn-log-in btn" type="button">
+            登陆
+        </button>
+        <button class="btn-register btn" type="button">
+            注册
+        </button>
+    </div>
+</header>
+<div class="menu">
+    <span></span>
+    <ul class="menu-group">
+        <li>首页</li>
+        <li>在线定制</li>
+        <li>标准箱</li>
+        <li>品质保障</li>
+    </ul>
+</div>
+
+<div class="step-outer-con">
+    <span></span>
+    <div class="container">
+        <div class="step-outer">
+            <div class="step-icon">
+                <div class="line-coin coin-finish">
+                </div>
+                <div class="circle-coin coin-finish">
+                    1
+                </div>
+                <div class="line-coin coin-finish"></div>
+            </div>
+
+            <div class="flow-name-finish flow-name">
+                1.定制纸箱
+            </div>
+        </div>
+
+
+        <div class="step-outer">
+            <div class="step-icon">
+                <div class="line-coin coin">
+                </div>
+                <div class="circle-coin coin">
+                    1
+                </div>
+                <div class="line-coin coin"></div>
+            </div>
+
+            <div class="flow-name-un-finish flow-name">
+                2.选择数量
+            </div>
+        </div>
+
+
+        <div class="step-outer">
+            <div class="step-icon">
+                <div class="line-coin coin">
+                </div>
+                <div class="circle-coin coin">
+                    1
+                </div>
+                <div class="line-coin coin"></div>
+            </div>
+
+            <div class="flow-name-un-finish flow-name">
+                3.上传附件
+            </div>
+        </div>
+
+
+        <div class="step-outer">
+            <div class="step-icon">
+                <div class="line-coin coin">
+                </div>
+                <div class="circle-coin coin">
+                    1
+                </div>
+                <div class="line-coin coin"></div>
+            </div>
+
+            <div class="flow-name-un-finish flow-name">
+                4.确认下单
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="main">
+    <div class="tips">
+        <div class="icon-custom-outer">
+            <div class="icon-custom"></div>
+            <strong>请您按照以下步骤来定制您的纸箱</strong>
+        </div>
+
+        <span></span>
+    </div>
+
+    <div class="form-container">
+        <!--选择箱型-->
+        <div class="style-title">
+            <img src="../img/box.jpg" alt="..">
+            选择箱型
+        </div>
+
+
+        <div class="style-content">
+            <form action="" method="get">
+                <input name="box-type" type="radio"  id="type-01" />
+                <label for="type-01">对口箱</label>
+                <input name="box-type" type="radio"  id="type-02"/>
+                <label for="type-02">飞机盒</label>
+                <input name="box-type" type="radio" id="type-03"/>
+                <label for="type-03">天地盖</label>
+            </form>
+            <select class="details">
+                <option>
+                    查看详情
+                </option>
+            </select>
+        </div>
+
+
+        <!--确定尺寸-->
+        <div class="style-title">
+            <img src="../img/Ruler.jpg" alt="..">
+            确定尺寸
+        </div>
+        <div class="size-content">
+            <div class="od">
+
+                <form>
+                    <input id="size-outer" type="radio" name="size">
+                    <label for="size-outer">外径</label>
+
+                    <div class="input-container">
+                        长<input id="lang-od" type="text">mm
+                    </div>
+                    <div class="input-container">
+                        宽<input id="width-od" type="text">mm
+                    </div>
+                    <div class="input-container">
+                        高<input id="height-od" type="text">mm
+                    </div>
+                    <div>
+
+                    <input id="size-inner" type="radio" name="size" >
+                    <label for="size-inner">内径</label>
+                    <div class="input-container">
+                        长<input id="lang-in-d" type="text">mm
+                    </div>
+                    <div class="input-container">
+                        宽<input id="width-in-d" type="text">mm
+                    </div>
+                    <div class="input-container">
+                        高<input id="height-in-d" type="text">mm
+                    </div>
+                    </div>
+                </form>
+            </div>
+
+<!--            <div class="in-d">-->
+<!--                <form>-->
+<!--                    <input id="size-inner" type="radio" name="size" />-->
+<!--                    <label for="size-inner">内径</label>-->
+<!--                    <div class="input-container">-->
+<!--                        长<input id="lang-in-d" type="text">mm-->
+<!--                    </div>-->
+<!--                    <div class="input-container">-->
+<!--                        宽<input id="width-in-d" type="text">mm-->
+<!--                    </div>-->
+<!--                    <div class="input-container">-->
+<!--                        高<input id="height-in-d" type="text">mm-->
+<!--                    </div>-->
+<!--                </form>-->
+
+<!--            </div>-->
+
+
+            <select class="details">
+                <option>
+                    查看详情
+                </option>
+            </select>
+        </div>
+
+
+        <!--选择材质-->
+        <div class="style-title">
+            <img src="../img/Cut.jpg" alt="..">
+            选择材质
+        </div>
+        <div class="material-content">
+            <div class="style-content">
+                <input id="material-1" type="radio" name="material" />
+                <label for="material-1">三层A瓦优质</label>
+
+                <input id="material-2" type="radio" name="material" />
+                <label for="material-2">三层A瓦优质</label>
+
+                <input id="material-3" type="radio" name="material" />
+                <label for="material-3">三层A瓦优质</label>
+
+                <input id="material-4" type="radio" name="material" />
+                <label for="material-4">三层A瓦优质</label>
+
+                <input id="material-5" type="radio" name="material" />
+                <label for="material-5">三层A瓦优质</label>
+
+                <input id="material-6" type="radio" name="material" />
+                <label for="material-6">三层A瓦优质</label>
+
+                <input id="material-7" type="radio" name="material" />
+                <label for="material-7">三层A瓦优质</label>
+
+
+                <select class="details">
+                    <option>
+                        查看详情
+                    </option>
+                </select>
+
+            </div>
+
+        </div>
+
+        <div class="next-content">
+            <button class="next">
+                下一步
+            </button>
+        </div>
+
+    </div>
+
+
+
+</div>
+<footer>
+    <div class="footer-main">
+        <div class="outer-patch">
+        <div class="footer-main-title">
+            51包装网——纸箱包装首选服务平台
+        </div>
+        </div>
+        <div class="outer-patch">
+        <div class="footer-main-link">
+            <ul>
+                <li>关于我们</li>
+                <li>配送流程</li>
+                <li>联系我们</li>
+                <li>下单指南</li>
+                <li>媒体介绍</li>
+            </ul>
+        </div>
+        </div>
+        <div class="outer-patch">
+        <div class="contact-way-container">
+        <div class="contact-way">
+            <span>TEL:400-0000-000</span>
+            <span>企业QQ：123456789</span>
+            <span>微信号：XXXXXXXXX</span>
+        </div>
+            <img src="../img/code1.jpg" alt=".">
+        </div>
+        </div>
+
+    </div>
+    <div class="footer-anther">
+        北京五一包装科技有限公司Copyright ©2015 &nbsp;&nbsp;&nbsp;&nbsp;
+        51baozhuang.com015  &nbsp;&nbsp;
+        All rights reserved.&nbsp;&nbsp;
+        京icp备99999999-1
+
+
+    </div>
+</footer>
+</body>
+
+</html>

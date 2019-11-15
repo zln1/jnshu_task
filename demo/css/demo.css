@@ -2,121 +2,33 @@
     margin: 0;
     padding: 0;
 }
-div {
-    box-sizing: border-box;
-}
 
-；root{
-    font-size: 12px;
-}
-
-
-.x {
-    margin: 100px auto;
-    width: 100px;
-    height: 100px;
-    transform: rotate(45deg);
-
-}
-
-.x1 {
-    float: left;
-    width: 50%;
-    height: 50%;
-    border-bottom:  2px solid black;
-    border-right:  2px solid black;
-}
-
-.x2 {
-    float: left;
-    width: 50%;
-    height: 50%;
-    border-bottom:  2px solid black;
-    border-left:  2px solid black;
-}
-.x3 {
-    float: left;
-    width: 50%;
-    height: 50%;
-    border-top: 2px solid black ;
-    border-right:  2px solid black;
-}
-
-.x4{
-    float: left;
-    width: 50%;
-    height: 50%;
-    border-top: 2px solid black ;
-    border-left:  2px solid black;
-}
-/*.Audio{position: relative; width: 500px; margin: 0 auto;}*/
-/*.pgs{width: 326px; margin: 0 auto 30px; background-color: #E3E8EE; text-align: center; position: relative; overflow: hidden; height: 35px;}*/
-/*.pgs-play{position: absolute; top:0; left: 4.65%; width: 0; height: 100%; background-color: #4785f9; z-index: 1;}*/
-/*.pgs img{width: 100%; position: relative; z-index: 2;}*/
-/*.audio-name{position: absolute; top: 0; width: 100%; left: 0;text-align: center; color: #666; font-size: 12px;}*/
-.controls {
-    width: auto;
-    height: 10px;
-    padding: 0;
-    /*text-align: center;*/
-}
-
-.play-pause {
-    border: 0;
-    outline: 0;
-    padding: 0;
-    width: 40px;
-    height: 40px;
-    margin: 0 28px;
-    background: none;
+div.coin-finish {
     display: inline-block;
-    vertical-align: middle;
+    background-color: #ff7f02;
+}
+div.coin{
+    display: inline-block;
+    background-color: #cccccc;
 }
 
-.icon-play {
-    width: 40px;
-    height: 40px;
-    background: url(../img/play.png) no-repeat;
-    background-size: 50%;
-    display: block;
-    color: #478f59;
+div.circle-coin {
+    text-align: center;
+    line-height: 24px;
+    width: 24px;
+    height: 24px;
+    border-radius: 100%;
+}
+div.line-coin {
+    width: 69px;
+    height: 5px;
+    border-radius: 4%;
 }
 
-.icon-pause {
-    width: 40px;
-    height: 40px;
-    background: url(../img/pruse.png) no-repeat;
-    background-size: 25%;
-
-    display: block;
-    color: #478f59;
+div.container {
+    color: #ffffff;
+    display: flex;
+    align-items: center;
 }
 
-/*.controls span{color: #b3b5b7; font-size: 12px; display: inline-block; width: 34px;}*/
-/*.audio-time{display: inline-block; vertical-align: middle;}*/
 
-div {
-    font-size: 1rem;
-    color: orange;
-}
-.col {
-
-    height: 50px;
-    border: 1px solid ;
-}
-
-.container {
-
-    border: 1px solid black;
-
-}
-
-.row1 {
-    height: 50px;
-}
-
-.col-4 {
-    font-size: 0.5rem;
-    height: 20px;
-    border: 1px solid ;
-}

@@ -52,6 +52,7 @@ div.container .row{
     background-color: white;
 }
 div.last-game {
+    position: relative;
     align-items: center;
     justify-content: center;
     /*line-height: 116px;*/
@@ -84,6 +85,7 @@ div.game-name {
 
 div.version-title-row {
     justify-content: center;
+    position: relative;
 }
 
 div.version-title {
@@ -94,6 +96,8 @@ div.version-title {
     /*margin-top: 29px;*/
     margin-top: 0.725rem;
 
+    margin-left: 25px;
+    margin-right: 25px;
     /*width: 462px;*/
     width: 11.55rem;
 
@@ -124,21 +128,22 @@ div.outer {
 }
 
 div.icon-turn {
-    position: relative;
+    position: absolute;
     display: inline-block;
     width: 0.75rem;
     height: 0.75rem;
     border-top: 0.125rem solid rgb(231,231,231);
     border-right: 0.125rem solid rgb(231,231,231);
-    transform: rotate(45deg);
-    right: -8vw;
+    right:10px;
+    transform: translate(0, -50%) rotate(45deg);
 }
 
 img {
-    top :17rem;
+    top :55%;
     position: absolute;
-    right: 2rem;
+    right: 5px;
     width: 0.7rem;
+    transform: translate(0,-50%);
 }
 
 div.circle {
@@ -149,6 +154,9 @@ div.circle {
     background-color: rgb(240,240,240);
     margin-left: 0.20rem;
 
+}
+div.circle:hover {
+    background-color: #69d1e9;
 }
 div.circles{
     display: block;

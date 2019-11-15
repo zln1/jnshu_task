@@ -11,7 +11,6 @@
 </head>
 <body>
 <header>
-    <div class=""></div>
     <div class="img-wrap">
         <span class="service-tel">
             客服热线：010-594-78634
@@ -24,7 +23,10 @@
     </div>
     <div class="header-nav-wrap">
         <img src="../img/www.jpg" class="job-img">
-        <ul class="header-nav-list">
+        <button class="my-button"  type="button" onclick="myfunction()">
+            <img src="../img/menu.png">
+        </button>
+        <ul class="header-nav-list" id="my-ul">
             <li>
                 <a href="home.html">首页</a>
             </li>
@@ -249,6 +251,7 @@
                 </p>
             </div>
         </div>
+        <div class="w-100" style="display: none"></div>
         <div class="col job-one">
 
             <div class="container job-intro-one">
@@ -531,6 +534,7 @@
                 </p>
             </div>
         </div>
+        <div class="w-100" style="display: none"></div>
         <div class="col job-one">
 
             <div class="container job-intro-one">
@@ -622,12 +626,8 @@
             </div>
         </div>
     </div>
-
     <div class="row">
         <div class="col job-one">
-
-
-            <!--         the one of job introduce-->
             <div class="container job-intro-one">
                 <!--                第一行++++个人头像+++职业介绍-->
                 <div class="row job-intro-div">
@@ -808,6 +808,8 @@
                 </p>
             </div>
         </div>
+        <div class="w-100" style="display: none"></div>
+
         <div class="col job-one">
         </div>
     </div>
@@ -1002,6 +1004,7 @@
                 </p>
             </div>
         </div>
+        <div class="w-100" style="display: none"></div>
         <div class="col job-one">
 
             <div class="container job-intro-one">
@@ -1196,6 +1199,8 @@
         </div>
         <div class="col job-one">
         </div>
+        <div class="w-100" style="display: none"></div>
+
         <div class="col job-one">
         </div>
     </div>
@@ -1231,5 +1236,17 @@
 <div class="footer-bottom">
     Copyright © 2015 北京葡萄藤信息技术有限公司 All Rights Reserved | 京ICP备15035574号-1
 </div>
+
+<script>
+    function myfunction() {
+
+        if (document.getElementById("my-ul").style.display == "block") {
+            document.getElementById("my-ul").style.display = "none";
+        } else {
+
+            document.getElementById("my-ul").style.display = "block";
+        }
+    }
+</script>
 </body>
 </html>

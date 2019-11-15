@@ -1,29 +1,32 @@
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 830px) {
     header .container {
         display: none;
     }
-
-    /*ul.header-nav-list{*/
-    /*    display: none !important;*/
-    /*}*/
     ul.header-nav-list li {
         display: block !important;
+        height: 30px;
+        line-height: 30px;
+        text-align: left;
     }
 
     ul.header-nav-list {
-        width: 100%;
         display: none;
         flex-direction: column;
     }
     button.my-button {
-        visibility: visible !important;
+        display: block !important;
+    }
+    .container .row {
+        flex-direction: column;
+    }
+    .container-bottom{
+        display: none;
     }
 
 }
 
 button.my-button {
-    visibility: hidden;
-    background: black;
+    display: none;
     border: 0;
     padding: 1px 1px 2px 1px;
     border-radius: 10%;
@@ -62,25 +65,25 @@ div.carousel.slide {
 }
 
 .container span.home-icon-rocket {
-    background-position: -90px -10px;
+    background-position: -90px -10px !important;
     width: 43px;
     height: 62px;
 }
 
 .container span.home-icon-archive {
-    background-position: -10px -10px;
+    background-position: -10px -10px !important;
     width: 60px;
     height: 48px;
 }
 
 .container span.home-icon-contacts {
-    background-position: -10px -78px;
+    background-position: -10px -78px !important;
     width: 52px;
     height: 55px;
 }
 
 .container span.people-icon {
-    background-position: -10px -153px;
+    background-position: -10px -153px !important;
     width: 13px;
     height: 13px;
 }
