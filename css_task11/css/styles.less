@@ -1,0 +1,189 @@
+
+
+
+
+@header-color: #5fc0cd;
+@header-height: 88px;
+@header-margin-bottom: 2px;
+@header-span-margin:30px;
+@font-size-btn: 32px;
+@log-in-btn: 36px;
+@btn-bg: color(#ffffff);
+@bg: color(#eff0f4);
+@width-all: percentage(1.0);
+
+
+@input-height: 100px;
+@input-placeholder-color: #e1e5e7;
+@input-padding-left: 150px;
+@input-margin-top: 14px;
+
+@forget-margin-right:31px;
+@forget-margin-top: 19px;
+
+@btn-margin-top: 69px;
+
+@icon-margin:43px;
+
+@my-icon-left:116px;
+
+@media only screen and (max-width: 600px) {
+  header {
+    span {
+      font-size: @font-size-btn * 0.8 !important;
+    }
+    span.close {
+      margin-left: @header-span-margin * 0.8 !important;
+    }
+    span.register {
+      margin-right: @header-span-margin * 0.8 !important;
+    }
+    .log-in {
+      font-size: @log-in-btn *0.8 !important;
+    }
+
+  }
+
+  div.input-outer {
+    input::-webkit-input-placeholder {
+      font-size: @font-size-btn *0.8 !important;
+    }
+
+
+    input {
+      width: calc(@width-all - @input-padding-left * 0.8) !important;
+      padding-left: @input-padding-left *0.8 !important;
+    }
+
+
+    .iphone {
+      background: url("../img/iphone1.jpg") no-repeat white @icon-margin * 0.8 !important;
+
+    }
+
+    .pwd {
+      background: url("../img/locked-2.jpg") no-repeat white @icon-margin * 0.8!important;
+    }
+
+    .my-icon1 {
+      left: @my-icon-left * 0.8 !important;
+    }
+
+    .my-icon2 {
+      left: @my-icon-left * 0.8 !important;
+    }
+
+  }
+
+
+  button {
+    font-size: @log-in-btn * 0.8 !important;
+  }
+
+  span.forget {
+    font-size: @font-size-btn * 0.8 !important;
+  }
+
+}
+
+
+html, body {
+  padding: 0;
+  margin: 0;
+  background-color: @bg;
+
+
+
+
+  header {
+    display: flex;
+    align-content: center;
+    justify-content: space-between;
+    height: @header-height;
+    background-color: @header-color;
+    margin-bottom: @header-margin-bottom;
+
+    span  {
+      color: @btn-bg;
+      font-size: @font-size-btn;
+      line-height: @header-height;
+    }
+
+    span.close {
+      margin-left: @header-span-margin;
+    }
+    span.register {
+      margin-right: @header-span-margin;
+    }
+    .log-in {
+      font-size: @log-in-btn;
+    }
+  }
+
+  div.input-outer {
+    font-size: @font-size-btn;
+
+
+    input::-webkit-input-placeholder {
+      font-size: @font-size-btn;
+      color: @input-placeholder-color;
+    }
+
+    input {
+      margin-top: @input-margin-top;
+      width: calc(@width-all - @input-padding-left);
+      height: @input-height;
+      border: 0;
+      padding-left: @input-padding-left;
+
+
+    }
+
+    .iphone {
+      background: url("../img/iphone1.jpg") no-repeat white 43px;
+
+    }
+
+    .pwd {
+      background: url("../img/locked-2.jpg") no-repeat white 43px;
+    }
+
+    .my-icon1 {
+      position: absolute;
+      top: 126px;
+      left: @my-icon-left;
+      width: 2px;
+      height: 51px;
+      background: #eaedee;
+    }
+
+    .my-icon2 {
+      position: absolute;
+      top: 243px;;
+      left: @my-icon-left;
+      width: 2px;
+      height: 51px;
+      background: #eaedee;
+    }
+
+
+  }
+
+  button {
+    margin-top:@btn-margin-top;
+    height: @input-height;
+    width: @width-all;
+    background-color: @header-color;
+    color: @btn-bg;
+    border: 0;
+    font-size: @log-in-btn;
+  }
+
+  span.forget {
+    float: right;
+    margin-right:@forget-margin-right ;
+    margin-top: @forget-margin-top;
+    font-size: @font-size-btn;
+    color: @header-color;
+  }
+}
