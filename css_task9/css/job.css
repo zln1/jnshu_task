@@ -3,12 +3,58 @@
     margin: 0;
     padding: 0;
 }
-@media only screen and (max-width: 1200px) {
-    div.w-100 {
-        display: block !important;
+
+@media only screen and (max-width: 860px) {
+
+
+    .container .row {
+        flex-direction: row !important;
     }
 
 }
+
+@media only screen and (max-width: 768px) {
+
+    div.job-one {
+
+      margin: 0 auto;
+    }
+
+
+
+}
+
+
+
+@media only screen and (max-width: 1200px) {
+    /*div.w-100 {*/
+    /*    display: block !important;*/
+    /*}*/
+
+        .container {
+            max-width: 768px !important;
+        }
+
+
+}
+/*div.w-100 {*/
+/*    display: none;*/
+/*}*/
+.enter {
+    display: none !important;
+}
+
+
+/*@media only screen and (max-width: 1200px){*/
+/*    .enter {*/
+/*        display: block;*/
+/*    }*/
+
+/*}*/
+/*@media (min-width: 768px){*/
+
+/*}*/
+
 
 
 
@@ -92,7 +138,10 @@ img.user-photo {
 }
 
 div.job-one {
+
     padding: 0 20px 0 0;
+    max-width: 380px;
+    /*max-height: 443px;*/
 }
 
 
@@ -111,7 +160,6 @@ div.col-4{
 }
 div.job-intro-div{
     display: flex;
-    /*flex-direction: column;*/
     align-items: center;
     border-bottom: 1px solid #edf1f2;
     border-left: 1px solid #edf1f2;
@@ -122,9 +170,6 @@ div.container.job-intro-one{
       margin-top: 46px;
       background-color: #ffffff;
  }
-div.container.job-intro-one:hover ~ div.cover {
-    display: block;
-}
 
 
 div.row.job-title-1{
@@ -169,7 +214,7 @@ div.spacer {
 }
 
 div.cover{
-    display: none;
+
     position: absolute;
     top: 48px;
     width: 360px;
@@ -177,8 +222,30 @@ div.cover{
     background: rgba(61,61,61,0.9);
     padding: 80px 50px 0 40px;
     color: #ffffff;
+    opacity:0;
     /*z-index: 100;*/
 }
+div.cover:hover {
+    opacity:1;
+    animation-name: light;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+    /*animation-iteration-count: infinite;*/
+    animation-direction: alternate;
+}
+
+@keyframes light{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+div.container.job-intro-one:hover ~ div.cover {
+}
+
 div.cover span{
     display: block;
     text-align: center;

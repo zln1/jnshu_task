@@ -2,6 +2,10 @@
     header .container {
         display: none;
     }
+
+    .container .row {
+        flex-direction: column;
+    }
     ul.header-nav-list li {
         display: block !important;
         height: 30px;
@@ -27,9 +31,7 @@
         display: block !important;
 
     }
-    .container .row {
-        flex-direction: column;
-    }
+
     .container-bottom{
         display: none;
     }
