@@ -23,6 +23,8 @@
         display: none;
     }
 
+
+
 }
 
 button.my-button {
@@ -241,7 +243,6 @@ div.container-bottom {
 
 div.container.friend-link {
     margin-top: 93px;
-    height: 134px;
 }
 
 strong.friend-title {
@@ -267,6 +268,15 @@ div.container.friend-link li {
 }
 
 div.row.friend-link {
+
+}
+ul.friend-link {
+    display: flex;
+    /*justify-content: space-around;*/
+    flex-wrap:wrap;
+}
+ul.friend-link li {
+    margin: 0 27px;
 }
 
 div.container.friend-link li:hover {

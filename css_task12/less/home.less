@@ -1,0 +1,228 @@
+html, body {
+  padding: 0;
+  margin: 0;
+}
+
+
+
+
+@header-height: 7vh;
+@data-height: 26vh;
+@skill-height: 48vh;
+@skill-line-height: @skill-height * 0.167;
+@skill-star-size: @skill-line-height * 0.27;
+
+@header-bg-color: #5fc0cd;
+@border-color:#e1e5e7;
+@icon-btn--left: 4.45vw;
+
+@header-font-size: 36px;
+@header-color: #ffffff;
+
+@data-background: "../img/back.png";
+@photo-img-left: 4.2vw;
+
+@base-massage-height: @data-height * 0.32;
+@age-font-size: @base-massage-height * 0.27;
+
+
+#flex-center(@items:center) {
+  display: flex;
+  align-items: center;
+}
+
+
+#absolute-center(@top:50%,@left:50%) {
+  & {
+    position: relative;
+  }
+  position: absolute;
+  top: @top;
+  left: @left;
+  transform: translate(-50%, -50%);
+}
+
+//三角按钮
+#icon-btn(@length:15px,@border-size:4px,@rotate:-45deg,@color:#ffffff) {
+  width: @length;
+  height: @length;
+  border-top: @border-size solid @color;
+  border-left: @border-size solid @color;
+  transform: rotate(@rotate);
+}
+
+
+header {
+  height: @header-height;
+  background-color: @header-bg-color;
+  #flex-center();
+
+  .icon-btn {
+    #icon-btn(@length: @header-height * 0.3);
+    position: relative;
+    left: @icon-btn--left;
+  }
+
+  & span {
+    display: inline-block;
+    margin: 0 auto;
+    font-size: @header-height * 0.4;
+    color: @header-color;
+  }
+}
+
+.data {
+  height: @data-height;
+  background: url(@data-background) no-repeat;
+  background-size: 100% ;
+  #flex-center;
+
+  @media only screen and (max-width: 600px){
+    background-size: 100% @data-height !important;
+  }
+
+  & > img {
+    margin-left: @photo-img-left;
+    height: @data-height * 0.52;
+
+    @media only screen and (max-width: 600px){
+      height: 40% !important;
+    }
+
+  }
+  .base-massage {
+    height: 32%;
+    color: #FFFFFF;
+    margin-left: 5.6vw;
+
+    font-size: @base-massage-height * 0.35;
+    span.name {
+      margin-right: 1em;
+    }
+    span.age {
+      font-size:@age-font-size;
+    }
+
+    .address{
+      img{
+        height: @base-massage-height * 0.22;
+      }
+      span {
+        font-size: @base-massage-height * 0.23;
+      }
+    }
+
+  }
+
+}
+
+.skill {
+  height: @skill-height;
+
+  .skill-line-leader {
+    height: @skill-line-height;
+    border-bottom: 1px solid @border-color;
+    #flex-center;
+
+    .skill-line-icon {
+      height: @skill-line-height * 0.27;
+      width: 3px;
+      background: #5fc0cd;
+      margin-left: 4.2vw;
+      margin-right: 3.56vw;
+      border-radius: 5px;
+    }
+
+    strong {
+      font-size: @skill-line-height * 0.33;
+    }
+  }
+  .text-line {
+    .skill-line;
+  }
+  @media only screen and (max-width: 600px){
+    .text-line {
+      height: auto;
+    }
+  }
+
+
+
+  .skill-line {
+    .skill-line-leader;
+    margin-left: 4.45vw;
+    font-size: @skill-line-height * 0.32;
+    padding-left: 28px;
+
+    .b-color {
+      color: #000000;
+      margin-left: 8px;
+    }
+
+    .g-color {
+      color: #999999;
+      margin-right: 8px;
+      white-space: nowrap;
+    }
+
+
+
+    @media only screen and (max-width: 600px){
+      .g-color {
+        white-space: initial !important;
+      }
+    }
+
+
+
+    .r-color {
+      color: #e26163;
+      margin-left: 8px;
+    }
+
+    .skill-1-icon{
+      display: inline-block;
+      height: @skill-line-height * 0.26;
+      width: 1px;
+      background-color: @border-color;
+      margin: 0 17px;
+    }
+
+    img {
+      height: @skill-star-size;
+    }
+
+    p {
+      padding-right: 8vw;
+      font-size: @skill-line-height * 0.28;
+    }
+  }
+
+}
+
+button {
+  width: 43vw;
+  height: 6.8vh;
+  border: 2px solid #5fc0cd;
+  font-size: 3vh;
+  position: fixed;
+  bottom: 3.5vh;
+  border-radius: 5px;
+}
+
+.massage{
+  left: 5.3vw;
+  background-color: #FFFFFF;
+  color: #5fc0cd;
+
+}
+
+.tel-connect {
+  right:5.3vw ;
+  background-color: #5fc0cd;
+  color: #FFFFFF;
+}
+
+
+
+
