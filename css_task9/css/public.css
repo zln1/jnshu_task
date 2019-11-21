@@ -115,9 +115,9 @@ button.my-button {
 
 
 .header-nav-wrap {
-    height: 100px;
     display: grid;
     grid-template-columns: 1fr 1fr;
+    grid-template-rows: 100px;
     align-items: center;
     justify-items: center;
     background-color: #29b078;
