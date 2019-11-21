@@ -28,7 +28,7 @@ p.job-lead {
     align-items: center;
     font-size: 16px;
     margin: 0;
-    padding: 30px   185px;;
+    padding: 30px   260px;;
 }
 
 span.job-kind{
@@ -37,7 +37,7 @@ span.job-kind{
 
 div.bus-list{
     display: inline-block;
-    margin: 0 24px 0 185px;
+    margin: 0 24px 0 260px;
     width: 304px;
     background-color: #ffffff;
     border: 1px solid #ededed;
@@ -78,13 +78,11 @@ div.partner-content{
     display: inline-block;
     border: 1px solid #eeeded;
     margin-bottom: 230px;
+    margin-right: 179px;
 }
 
 div.partner-content-top p{
-    display: inline-block;
-    margin-top: 20px;
-    margin-right: 40px;
-    width: 574px;
+    margin: 18px 18px;
     font-size: 14px;
     color: #999999;
 }
@@ -92,6 +90,7 @@ div.partner-content-top p{
 div.partner-content-top img {
     display: inline-block;
     margin-left: 20px;
+    float: left;
 
 }
 
@@ -111,8 +110,7 @@ div.text p{
 }
 
 div.partner-content-top {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
     border-bottom: 1px solid #e6e6e6;
+    padding: 10px 50px;
+    overflow: hidden;
 }

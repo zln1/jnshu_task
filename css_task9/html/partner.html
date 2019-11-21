@@ -12,26 +12,23 @@
 </head>
 <body>
 <header>
-    <div class="container">
-        <div class="row">
-            <div class="col-md-4 hidden-xs ">
-               <span class="service-tel">
+    <div class="img-wrap">
+        <span class="service-tel">
             客服热线：010-594-78634
-               </span>
-            </div>
-            <div class="col-md-8 ">
-                <div class="header-icon">
-                    <span class="icon-chat"></span>
-                    <span class="icon-wei-bo"></span>
-                    <span class="icon-qq"></span>
-                </div>
-            </div>
+        </span>
+        <div class="header-icon">
+            <span class="icon-chat"></span>
+            <span class="icon-wei-bo"></span>
+            <span class="icon-qq"></span>
         </div>
     </div>
+
     <div class="header-nav-wrap" id="nav-wrap">
         <img src="../img/www.jpg" class="job-img">
         <button class="my-button"  type="button" onclick="myfunction()">
-            <img src="../img/menu.png">
+            <div class="btn-outer">
+                <div class="btn-hidden"></div>
+            </div>
         </button>
         <ul class="header-nav-list" id="my-ul">
             <li>
@@ -142,14 +139,16 @@
             <div class="col-sm-5 col-xs-12">
                 <p class="lead">技能树——改变你我</p>
                 <p class="links-footer">
-                    关于你我&nbsp;|&nbsp;联系我们&nbsp;|&nbsp;合作企业
+                    <span class="web-link">关于我们</span> &nbsp;|&nbsp;
+                    <span class="web-link">联系我们</span> &nbsp;|&nbsp;
+                    <span class="web-link">合作企业</span>
                 </p>
             </div>
             <div class="col-sm-5 col-xs-12">
                 <p class="lead">旗下网站</p>
-                <p class="links-footer">草船云孵化器&nbsp;&nbsp;&nbsp;最强IT特训营</p>
+                <p class="links-footer"><span class="web-link">草船云孵化器</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="web-link">最强IT特训营</span></p>
 
-                <p class="links-footer">葡萄藤轻游戏&nbsp;&nbsp;&nbsp;桌游精灵</p>
+                <p class="links-footer"><span class="web-link">葡萄藤轻游戏</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="web-link">桌游精灵</span></p>
             </div>
             <div class="col-sm-2 col-xs-12">
                 <p class="lead">微信公众号</p>
@@ -159,6 +158,7 @@
     </div>
 
 </footer>
+
 <div class="footer-bottom">
     Copyright © 2015 北京葡萄藤信息技术有限公司 All Rights Reserved | 京ICP备15035574号-1
 </div>

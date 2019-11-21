@@ -4,6 +4,16 @@
     padding: 0;
 }
 
+
+@media screen and (max-width: 375px){
+
+    div.job-one {
+        min-width: 389px;
+    }
+}
+
+
+
 @media only screen and (max-width: 860px) {
 
 
@@ -104,11 +114,20 @@ strong.job-title {
 ul.job-lead-menu li{
     display: inline-block;
     font-size: 14px;
-    margin: 0 16px;
+    margin: 0 10px;
+    padding: 0 5px;
+}
+ul.job-lead-menu li:hover {
+    color: #fff;
+    background-color: #29b078;
+}
+ul.job-lead-menu li.leader:hover {
+    color: #999999;
+    background-color: inherit;
 }
 .job-lead-menu .leader{
     margin: 0;
-    color: #a1a1a1;
+    color: #999999;
 }
 
 div.job-intro-container {
@@ -226,12 +245,8 @@ div.cover{
     /*z-index: 100;*/
 }
 div.cover:hover {
-    opacity:1;
-    animation-name: light;
-    animation-duration: 3s;
-    animation-timing-function: linear;
-    /*animation-iteration-count: infinite;*/
-    animation-direction: alternate;
+   animation: light 2s infinite;
+ 
 }
 
 @keyframes light{

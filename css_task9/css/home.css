@@ -16,9 +16,9 @@
     button.my-button {
         display: block !important;
     }
-    .container .row {
-        flex-direction: column;
-    }
+    /*.container .row {*/
+    /*    flex-direction: column;*/
+    /*}*/
     .container-bottom{
         display: none;
     }
@@ -26,6 +26,9 @@
 
 
 }
+
+
+
 
 button.my-button {
     display: none;
@@ -118,6 +121,7 @@ div.col.top-div {
     justify-content: center;
     font-size: 18px;
     color: #26a26f;
+    margin-left: 50px;
 }
 
 div.num {
@@ -161,8 +165,8 @@ p.how-study-content {
 div.col.how-to-study {
     display: flex;
     align-items: center;
-    justify-content: space-around;
     height: 100px;
+    justify-content: center;
 }
 
 div.col.how-to-study .home-small-icon {
@@ -176,22 +180,24 @@ div.col.how-to-study .home-small-icon {
 /*++++++++++++++++++++++++++++++++++++++++++++(学员展示---start)++++++++++++++++++++++++++++++++++++++++++++++++*/
 div.good-show {
     display: flex;
-    height: 369px;
     border: 1px solid #eeeded;
     background-color: #ffffff;
     border-radius: 5%;
+    margin-bottom: 10px;
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
 }
 
 .good-show-photo {
+    margin: 10px 0;
 
 }
 
 .good-show-title {
     display: block;
     font-size: 18px;
+    margin: 15px 15px;
 }
 
 .good-show-content {
@@ -225,12 +231,26 @@ div.point-of-one:hover {
 div.container.partner {
     border: 1px solid #eeeded;
     background-color: white;
+    margin-bottom: 54px;
+    justify-items: center;
+    width: auto;
 
 }
+.home-partner-img {
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    width: fit-content;
+    max-width: 227.6px;
+    min-width: 227px;
+    min-height: 191px;
+    margin-bottom: 10px;
+}
+
 
 div.home-partner-img:hover {
-    border-left: 1px solid #eeeded;
-    border-right: 1px solid #eeeded;
+    box-shadow: -8px -8px 17px #888888;
 
 }
 
@@ -274,6 +294,7 @@ ul.friend-link {
     display: flex;
     /*justify-content: space-around;*/
     flex-wrap:wrap;
+    padding-bottom: 15px;
 }
 ul.friend-link li {
     margin: 0 27px;
