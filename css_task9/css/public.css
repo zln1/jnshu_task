@@ -99,7 +99,6 @@ button.my-button {
 
 /*公用部分--头部图标&客服电话*/
 .img-wrap {
-    height: 39px;
     display: grid;
     grid-template-columns: 1fr 1fr;
     align-items: center;
@@ -116,9 +115,9 @@ button.my-button {
 
 
 .header-nav-wrap {
+    height: 100px;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 152px;
     align-items: center;
     justify-items: center;
     background-color: #29b078;
