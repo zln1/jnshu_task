@@ -246,6 +246,8 @@ div.cover{
 }
 div.cover:hover {
    animation: light 2s infinite;
+    animation-iteration-count:1;
+    opacity: 1;
  
 }
 
