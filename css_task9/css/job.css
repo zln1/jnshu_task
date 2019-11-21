@@ -45,6 +45,11 @@
             max-width: 768px !important;
         }
 
+    strong.job-title{
+        width: 100%;
+        text-align: center;
+    }
+
 
 }
 /*div.w-100 {*/
