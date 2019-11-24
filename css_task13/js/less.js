@@ -23,19 +23,19 @@
       /* Outputs a makefile import dependency list to stdout. */
       depends: false,
 
-      /* (DEPRECATED) Compress using less built-in compression. 
+      /* (DEPRECATED) Compress using css built-in compression.
       * This does an okay job but does not utilise all the tricks of 
       * dedicated css compression. */
       compress: false,
 
-      /* Runs the less parser and just reports errors without any output. */
+      /* Runs the css parser and just reports errors without any output. */
       lint: false,
 
       /* Sets available include paths.
       * If the file in an @import rule does not exist at that exact location, 
-      * less will look for it at the location(s) passed to this option. 
+      * css will look for it at the location(s) passed to this option.
       * You might use this for instance to specify a path to a library which 
-      * you want to be referenced simply and relatively in the less files. */
+      * you want to be referenced simply and relatively in the css files. */
       paths: [],
 
       /* color output in the terminal */
@@ -50,7 +50,7 @@
       insecure: false,
 
       /* Allows you to add a path to every generated import and url in your css. 
-      * This does not affect less import statements that are processed, just ones 
+      * This does not affect css import statements that are processed, just ones
       * that are left in the output css. */
       rootpath: '',
 
@@ -68,7 +68,7 @@
       */
       math: 0,
 
-      /* Without this option, less attempts to guess at the output unit when it does maths. */
+      /* Without this option, css attempts to guess at the output unit when it does maths. */
       strictUnits: false,
 
       /* Effectively the declaration is put at the top of your base Less file, 
@@ -112,7 +112,7 @@
       // Strip the query-string
       var href = sheet.href || ''; // If there is no title set, use the filename, minus the extension
 
-      var id = "less:".concat(sheet.title || extractId(href)); // If this has already been inserted into the DOM, we may need to replace it
+      var id = "css:".concat(sheet.title || extractId(href)); // If this has already been inserted into the DOM, we may need to replace it
 
       var oldStyleNode = document.getElementById(id);
       var keepOldStyleNode = false; // Create a new stylesheet node for insertion or (if necessary) replacement
@@ -2134,7 +2134,7 @@
 
         if (typeof name !== 'string') {
           // expand 'primitive' name directly to get
-          // things faster (~10% for benchmark.less):
+          // things faster (~10% for benchmark.css):
           name = name.length === 1 && name[0] instanceof Keyword ? name[0].value : evalName(context, name);
           variable = false; // never treat expanded interpolation as new variable name
         } // @todo remove when parens-division is default
@@ -2852,7 +2852,7 @@
               hash[r.name] = r;
             } // when evaluating variables in an import statement, imports have not been eval'd
             // so we need to go inside import statements.
-            // guard against root being a string (in the case of inlined less)
+            // guard against root being a string (in the case of inlined css)
 
 
             if (r.type === 'Import' && r.root && r.root.variables) {
@@ -6402,7 +6402,7 @@
     }, {
       key: "tryAppendLessExtension",
       value: function tryAppendLessExtension(path) {
-        return this.tryAppendExtension(path, '.less');
+        return this.tryAppendExtension(path, '.css');
       }
     }, {
       key: "supportsSync",
@@ -8900,7 +8900,7 @@
     return parserInput;
   });
 
-  // less.js - parser
+  // css.js - parser
   //
   //    A relatively straight-forward predictive parser.
   //    There is no tokenization/lexing stage, the input is parsed
@@ -9036,7 +9036,7 @@
       parseNode: parseNode,
       //
       // Parse an input string into an abstract syntax tree,
-      // @param str A string containing 'less' markup
+      // @param str A string containing 'css' markup
       // @param callback call `callback` when done.
       // @param [additionalData] An optional map which can contains vars - a map (key, value) of variables to apply
       //
@@ -10252,7 +10252,7 @@
         },
         //
         // A CSS Selector
-        // with less extensions e.g. the ability to extend and guard
+        // with css extensions e.g. the ability to extend and guard
         //
         //     .class > div + h1
         //     li a:hover
@@ -12938,7 +12938,7 @@
             var compress = Boolean(options.compress);
 
             if (compress) {
-              logger.warn('The compress option has been deprecated. ' + 'We recommend you use a dedicated css minifier, for instance see less-plugin-clean-css.');
+              logger.warn('The compress option has been deprecated. ' + 'We recommend you use a dedicated css minifier, for instance see css-plugin-clean-css.');
             }
 
             var toCSSOptions = {
@@ -13026,7 +13026,7 @@
       /**
        * Add an import to be imported
        * @param path - the raw path
-       * @param tryAppendExtension - whether to try appending a file extension (.less or .js if the path has no extension)
+       * @param tryAppendExtension - whether to try appending a file extension (.css or .js if the path has no extension)
        * @param currentFileInfo - the current file info (used for instance to work out relative paths)
        * @param importOptions - import options
        * @param callback - callback for when it is imported
@@ -13091,10 +13091,10 @@
             // is in a (sub|sup) directory
             //
             // Examples:
-            // - If path of imported file is 'module/nav/nav.less' and rootpath is 'less/',
-            //   then rootpath should become 'less/module/nav/'
-            // - If path of imported file is '../mixins.less' and rootpath is 'less/',
-            //   then rootpath should become 'less/../'
+            // - If path of imported file is 'module/nav/nav.css' and rootpath is 'css/',
+            //   then rootpath should become 'css/module/nav/'
+            // - If path of imported file is '../mixins.css' and rootpath is 'css/',
+            //   then rootpath should become 'css/../'
 
             newFileInfo.currentDirectory = fileManager.getPath(resolvedFilename);
 
@@ -13142,7 +13142,7 @@
           var context = clone(this.context);
 
           if (tryAppendExtension) {
-            context.ext = importOptions.isPlugin ? '.js' : '.less';
+            context.ext = importOptions.isPlugin ? '.js' : '.css';
           }
 
           if (importOptions.isPlugin) {
@@ -13627,7 +13627,7 @@
 
         logger$1.debug("XHR: Getting '".concat(url, "'"));
         xhr.open('GET', url, async);
-        xhr.setRequestHeader('Accept', type || 'text/x-less, text/css; q=0.9, */*; q=0.5');
+        xhr.setRequestHeader('Accept', type || 'text/x-css, text/css; q=0.9, */*; q=0.5');
         xhr.send(null);
 
         function handleResponse(xhr, callback, errback) {
@@ -13667,7 +13667,7 @@
     }, {
       key: "loadFile",
       value: function loadFile(filename, currentDirectory, options, environment) {
-        // TODO: Add prefix support like less-node?
+        // TODO: Add prefix support like css-node?
         // What about multiple paths?
         if (currentDirectory && !this.isPathAbsolute(filename)) {
           filename = currentDirectory + filename;
@@ -13807,7 +13807,7 @@
 
   var ErrorReporting = (function (window, less, options) {
     function errorHTML(e, rootHref) {
-      var id = "less-error-message:".concat(extractId(rootHref || ''));
+      var id = "css-error-message:".concat(extractId(rootHref || ''));
       var template = '<li><label>{line}</label><pre class="{class}">{content}</pre></li>';
       var elem = window.document.createElement('div');
       var timer;
@@ -13816,8 +13816,8 @@
       var filename = e.filename || rootHref;
       var filenameNoPath = filename.match(/([^\/]+(\?.*)?)$/)[1];
       elem.id = id;
-      elem.className = 'less-error-message';
-      content = "<h3>".concat(e.type || 'Syntax', "Error: ").concat(e.message || 'There is an error in your .less file') + "</h3><p>in <a href=\"".concat(filename, "\">").concat(filenameNoPath, "</a> ");
+      elem.className = 'css-error-message';
+      content = "<h3>".concat(e.type || 'Syntax', "Error: ").concat(e.message || 'There is an error in your .css file') + "</h3><p>in <a href=\"".concat(filename, "\">").concat(filenameNoPath, "</a> ");
 
       var errorline = function errorline(e, i, classname) {
         if (e.extract[i] !== undefined) {
@@ -13838,7 +13838,7 @@
 
       elem.innerHTML = content; // CSS for error messages
 
-      browser.createCSS(window.document, ['.less-error-message ul, .less-error-message li {', 'list-style-type: none;', 'margin-right: 15px;', 'padding: 4px 0;', 'margin: 0;', '}', '.less-error-message label {', 'font-size: 12px;', 'margin-right: 15px;', 'padding: 4px 0;', 'color: #cc7777;', '}', '.less-error-message pre {', 'color: #dd6666;', 'padding: 4px 0;', 'margin: 0;', 'display: inline-block;', '}', '.less-error-message pre.line {', 'color: #ff0000;', '}', '.less-error-message h3 {', 'font-size: 20px;', 'font-weight: bold;', 'padding: 15px 0 5px 0;', 'margin: 0;', '}', '.less-error-message a {', 'color: #10a', '}', '.less-error-message .error {', 'color: red;', 'font-weight: bold;', 'padding-bottom: 2px;', 'border-bottom: 1px dashed red;', '}'].join('\n'), {
+      browser.createCSS(window.document, ['.css-error-message ul, .css-error-message li {', 'list-style-type: none;', 'margin-right: 15px;', 'padding: 4px 0;', 'margin: 0;', '}', '.css-error-message label {', 'font-size: 12px;', 'margin-right: 15px;', 'padding: 4px 0;', 'color: #cc7777;', '}', '.css-error-message pre {', 'color: #dd6666;', 'padding: 4px 0;', 'margin: 0;', 'display: inline-block;', '}', '.css-error-message pre.line {', 'color: #ff0000;', '}', '.css-error-message h3 {', 'font-size: 20px;', 'font-weight: bold;', 'padding: 15px 0 5px 0;', 'margin: 0;', '}', '.css-error-message a {', 'color: #10a', '}', '.css-error-message .error {', 'color: red;', 'font-weight: bold;', 'padding-bottom: 2px;', 'border-bottom: 1px dashed red;', '}'].join('\n'), {
         title: 'error-message'
       });
       elem.style.cssText = ['font-family: Arial, sans-serif', 'border: 1px solid #e00', 'background-color: #eee', 'border-radius: 5px', '-webkit-border-radius: 5px', '-moz-border-radius: 5px', 'color: #e00', 'padding: 15px', 'margin-bottom: 15px'].join(';');
@@ -13862,7 +13862,7 @@
     }
 
     function removeErrorHTML(path) {
-      var node = window.document.getElementById("less-error-message:".concat(extractId(path)));
+      var node = window.document.getElementById("css-error-message:".concat(extractId(path)));
 
       if (node) {
         node.parentNode.removeChild(node);
@@ -13881,7 +13881,7 @@
       var template = '{line} {content}';
       var filename = e.filename || rootHref;
       var errors = [];
-      var content = "".concat(e.type || 'Syntax', "Error: ").concat(e.message || 'There is an error in your .less file', " in ").concat(filename);
+      var content = "".concat(e.type || 'Syntax', "Error: ").concat(e.message || 'There is an error in your .css file', " in ").concat(filename);
 
       var errorline = function errorline(e, i, classname) {
         if (e.extract[i] !== undefined) {
@@ -13966,7 +13966,7 @@
     function _imageSize() {
       throw {
         type: 'Runtime',
-        message: 'Image size functions are not supported in browser version of less'
+        message: 'Image size functions are not supported in browser version of css'
       };
     }
 
@@ -14162,7 +14162,7 @@
       return false;
     }; //
     // Synchronously get all <link> tags with the 'rel' attribute set to
-    // "stylesheet/less".
+    // "stylesheet/css".
     //
 
 
@@ -14171,13 +14171,13 @@
       less.sheets = [];
 
       for (var i = 0; i < links.length; i++) {
-        if (links[i].rel === 'stylesheet/less' || links[i].rel.match(/stylesheet/) && links[i].type.match(typePattern)) {
+        if (links[i].rel === 'stylesheet/css' || links[i].rel.match(/stylesheet/) && links[i].type.match(typePattern)) {
           less.sheets.push(links[i]);
         }
       }
     }; //
     // Asynchronously get all <link> tags with the 'rel' attribute set to
-    // "stylesheet/less", returning a Promise.
+    // "stylesheet/css", returning a Promise.
     //
 
 
@@ -14188,7 +14188,7 @@
       });
     }; //
     // With this function, it's possible to alter variables and re-render
-    // CSS without reloading less-files
+    // CSS without reloading css-files
     //
 
 
@@ -14221,7 +14221,7 @@
             sheets: less.sheets.length
           });
         } else {
-          // Relies on less.sheets array, callback seems to be guaranteed to be called for every element of the array
+          // Relies on css.sheets array, callback seems to be guaranteed to be called for every element of the array
           loadStyleSheets(function (e, css, _, sheet, webInfo) {
             if (e) {
               errors.add(e, e.href || sheet.href);
@@ -14264,9 +14264,9 @@
   });
 
   /**
-   * Kicks off less and compiles any stylesheets
-   * used in the browser distributed version of less
-   * to kick-start less using the browser api
+   * Kicks off css and compiles any stylesheets
+   * used in the browser distributed version of css
+   * to kick-start css using the browser api
    */
   var options$1 = defaultOptions();
 
