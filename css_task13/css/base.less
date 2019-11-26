@@ -100,7 +100,7 @@
 .h-grid() {
   display: grid;
   grid-template-areas: "... ... ..." "a  b   c";
-  grid-template-columns: 80px 6fr 80px;
+  grid-template-columns: 1fr 6fr 1fr;
   grid-template-rows: 5fr 17fr;
   justify-items: center;
   align-items: center;
@@ -110,16 +110,16 @@
 //icon
 //custom-icon
 //三条杠
-@out-h: 2vh;
-@ph: e("calc(@{out-h}/2 - 3px)");
-.thr-icon-outer {
+
+.thr-icon-outer(@out-h: 2vh,@color:#fff) {
+  @ph: e("calc(@{out-h}/2 - 3px)");
   //@ph: (@out-h - 6px)/2;
   height: @out-h;
   width: e("calc(@{out-h} + 2*@{ph} - 1px)");
   //@out-h + 2*@ph - 1px;
   grid-area: a;
   padding: calc(~"@{ph} + 1px") 3px;
-  border: 2px solid #fff;
+  border: 2px solid @color;
 
   .thr-icon {
     box-sizing: border-box;
@@ -177,13 +177,13 @@
 
 
 //  angle-one
-.icon-angle {
-  width: 10px;
-  height: 10px;
-  .bs(5px, #e7e7e7);
+.icon-angle(@wh:10px,@rot:45deg,@bw:5px,@color:#e7e7e7) {
+  width: @wh;
+  height: @wh;
+  .bs(@bw, @color);
   .btn;
   .bln;
-  transform: rotate(45deg);
+  transform: rotate(@rot);
 }
 
 //triangle
@@ -213,19 +213,22 @@
 //</div>
 
 
-.icon-f-point-outer {
-  padding: 1px;
-  min-width: 105px;
+.icon-f-point-outer (@size:10px){
+  @p:@size/2;
+  @out-size:@size * 4 + @p * 4;
+  //padding: 1px;
+  min-width: @out-size;
+  .icon-f-point {
+    display: inline-block;
+    margin-right: @p;
+    width: @size;
+    height: @size;
+    border-radius: 100%;
+    background-color: #f0f0f0;
+  }
 }
 
-.icon-f-point {
-  display: inline-block;
-  margin-right: 10px;
-  width: 16px;
-  height: 16px;
-  border-radius: 100%;
-  background-color: #f0f0f0;
-}
+
 
 .icon-f-point :hover {
   background-color: #69d1e9;
@@ -265,7 +268,7 @@ header {
   background-position: @bp;
 }
 
-.icon-spr-21(@w:51px,@h:42px,@bp:-82px -10px) {
+.icon-spr-21(@w:51px,@h:42px,@bp:-10px -82px) {
   width: @w;
   height: @h;
   background-position: @bp;
