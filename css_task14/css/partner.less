@@ -1,0 +1,126 @@
+@import "base.css";
+
+@media screen and (max-width: 1000px){
+
+  .partner-bot {
+    grid-template-columns:1fr !important;
+    justify-items: center !important;
+  }
+
+  .partner-main-list {
+    width: 100% !important;
+    margin-bottom: 50px !important;
+  }
+}
+
+
+
+body {
+  background-color: #fafafa;
+}
+
+main {
+  margin: 0 10vw;
+}
+
+.partner-mt {
+  padding: 30px 0;
+  font-size: 16px;
+
+  span {
+    color: #29b078;
+  }
+}
+
+.partner-bot {
+  display: grid;
+  grid-template-columns: minmax(300px, 30fr) 87fr;
+  grid-column-gap: 24px;
+}
+
+
+.partner-main-list {
+  display: inline-block;
+  width: 304px;
+  border: 1px solid #ededed;
+  background-color: #fff;
+  height: fit-content;
+  border-radius: 10px;
+
+  .partner-ml-title {
+    padding: 20px 0;
+    text-align: center;
+    border-bottom: 1px solid #ededed;
+    font-size: 16px;
+    font-weight: bold;
+  }
+
+  .partner-name {
+    display: grid;
+    grid-template-rows: repeat(12, 1fr);
+    justify-content: center;
+    padding-bottom: 40px;
+
+    span {
+      margin-top: 40px;
+      font-size: 14px;
+      color: #29b078;
+    }
+
+    span:hover {
+      color: #f9a372;
+    }
+
+
+    span::before {
+      content: "";
+      display: inline-block;
+      margin-right: 6px;
+      width: 8px;
+      height: 8px;
+      border-radius: 100%;
+      border: 1px solid #ff650e;
+    }
+
+    span:hover:before {
+      background-color: #f9a372;
+    }
+  }
+}
+
+.partner-main-content {
+  display: inline-block;
+  background-color: #fff;
+  border: 1px solid #eeeded;
+  font-size: 14px;
+  color: #a0a0a0;
+  line-height: 2em;
+  margin-bottom: 230px;
+  border-radius: 10px;
+
+
+
+  .mr-top {
+    border-bottom: 1px solid #e6e6e6;
+    padding: 25px 60px;
+    overflow: auto;
+
+    img {
+      float: left;
+      margin-right: 20px;
+    }
+
+    span {
+      font-size: 14px;
+      color: #a0a0a0;
+    }
+  }
+
+  .text {
+    p {
+      margin: 40px 60px;
+      word-break: break-all;
+      text-indent: 2em;
+    }
+  }
+}

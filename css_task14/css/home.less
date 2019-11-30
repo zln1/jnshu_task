@@ -1,0 +1,381 @@
+@import "base.css";
+
+
+/*banner---轮播图*/
+
+
+body {
+  background-color: #fafafa;
+}
+
+header {
+  background-color: #fff;
+}
+
+.viewport {
+  position: relative;
+  overflow: hidden;
+}
+
+
+.box {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+
+input[type="radio"] {
+  opacity: 0;
+  width: 0;
+  height: 0;
+  position: absolute;
+}
+
+
+.radio-style::before {
+  @wh: 2vw;
+  display: inline-block;
+  width: @wh;
+  height: @wh;
+  border-radius: 50%;
+  border: 1px solid #fff;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  content: "";
+}
+
+.checked-icon() {
+  background-color: #fff;
+}
+
+#p1:checked ~ .box label[for="p1"] .radio-style::before {
+  .checked-icon;
+}
+
+#p2:checked ~ .box label[for="p2"] .radio-style::before {
+  .checked-icon;
+}
+
+#p3:checked ~ .box label[for="p3"] .radio-style::before {
+  .checked-icon;
+
+}
+
+
+.wrap {
+  position: relative;
+  width: 500vw;
+  overflow: hidden;
+}
+
+.wrap img {
+  display: inline-block;
+  width: 100vw;
+  height: auto;
+  float: left;
+}
+
+
+#p1:checked ~ .wrap {
+  left: -100vw;
+  transition: 1s linear;
+}
+
+#p1:checked[class='right'] ~ .wrap {
+  animation: loop 1s linear;
+}
+
+@keyframes loop {
+  0% {
+    left: -300vw;
+  }
+  90% {
+    left: -400vw;
+  }
+  99.9999% {
+    left: -400vw;
+  }
+  100% {
+    left: -100vw;
+  }
+}
+
+//
+#p2:checked ~ .wrap {
+  left: -200vw;
+  transition: 1s linear;
+}
+
+#p3:checked ~ .wrap {
+  left: -300vw;
+  transition: 1s linear;
+}
+
+#p3:checked[class='left'] ~ .wrap {
+  animation: loops 1s linear;
+}
+
+@keyframes loops {
+  0% {
+    left: -100vw;
+  }
+
+  90% {
+    left: 0;
+  }
+
+  99.999999% {
+    left: 0;
+  }
+  100% {
+    left: -300vw;
+  }
+}
+
+.icon-left label {
+  @w: 2vw;
+  @b: @w /2 ;
+  display: none;
+  width: @w;
+  height: @w;
+  border-top: @b solid #fff;
+  border-right: @b solid #fff;
+  transform: rotate(-135deg);
+}
+
+@lr: 10vw;
+#p1:checked ~ .icon-left label:nth-of-type(3),
+#p2:checked ~ .icon-left label:nth-of-type(1),
+#p3:checked ~ .icon-left label:nth-of-type(2) {
+  display: inline-block;
+  position: absolute;
+  top: 50%;
+  left: @lr;
+  transform: rotate(-135deg) translate(100%, 0);
+}
+
+
+#p1:checked ~ .icon-right label:nth-of-type(2),
+#p2:checked ~ .icon-right label:nth-of-type(3),
+#p3:checked ~ .icon-right label:nth-of-type(1) {
+  display: inline-block;
+  position: absolute;
+  top: 50%;
+  right: @lr;
+  transform: rotate(-135deg) translate(100%, 0);
+
+}
+
+.icon-right label {
+  @w: 2vw;
+  @b: @w /2 ;
+  display: none;
+  width: @w;
+  height: @w;
+  border-left: @b solid #fff;
+  border-bottom: @b solid #fff;
+  transform: rotate(-135deg);
+}
+
+
+/*banner---轮播图     end*/
+
+/*home-main */
+.home-main {
+  margin: 165px 5vw;
+}
+
+/*hm-top*/
+.hm-top {
+  display: grid;
+  grid-template-columns: 17fr 17fr 17fr 13fr;
+  grid-column-gap: 2vw;
+  margin: 0 auto;
+  /*margin: 160px 18.5%;*/
+  /*margin: 160px 15%;*/
+
+}
+
+.hm-top-one {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  height: 262px;
+}
+
+.hm-top-p {
+  height: 100px;
+  font-size: 16px;
+  color: #999999;
+}
+
+.hm-top-count {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-size: 18px;
+  border-left: 1px dashed #dedede;
+  padding-left: 2vw;
+}
+
+.count-num {
+  color: #26a26f;
+  font-weight: bold;
+}
+
+.count-name {
+  color: #999999;
+}
+
+/*hm-top          end*/
+
+/*如何学习 */
+.how-study-title {
+
+  text-align: center;
+  font-size: 18px;
+}
+
+.how-study {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-column-gap: 10px;
+  grid-row-gap: 94px;
+  /*margin: 50px 10%;*/
+}
+
+.study-step {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.step-numb {
+  display: inline-block;
+  width: 70px;
+  height: 70px;
+  border-radius: 100%;
+  border: 1px solid #e4e4e4;
+  background-color: #fff;
+  text-align: center;
+  line-height: 70px;
+  font-size: 18px;
+  color: #29b078;
+}
+
+.step-content {
+  display: inline-block;
+
+  max-width: 150px;
+  font-size: 14px;
+  color: #999999;
+}
+
+.icon-4x {
+  visibility: hidden;
+}
+
+/*如何学习     end*/
+
+/*优秀学员展示     */
+.user-show-p {
+  margin-top: 80px;
+  margin-bottom: 70px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.banner-user {
+  width: 1247px;
+  margin: 0 auto;
+}
+
+.user-outer {
+
+}
+
+.user {
+  display: inline-block;
+  box-sizing: border-box;
+  width: 270px;
+  height: 370px;
+  padding: 18px 30px 40px;
+  border: 1px solid #eeeded;
+  background-color: #fff;
+  border-radius: 10px;
+  margin: 0 19px;
+}
+
+.user-title {
+  text-align: center;
+  font-size: 18px;
+}
+
+.user-image {
+  display: block;
+  margin: 0 auto;
+}
+
+.user-content {
+  font-size: 16px;
+  color: #999999;
+}
+
+/*战略合作企业*/
+.partner-p {
+  margin-top: 80px;
+  margin-bottom: 70px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.partner {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: max-content;
+  background-color: #fff;
+
+}
+
+.part-outer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+
+.part-outer:hover {
+  box-shadow: -8px -8px 17px #888888;
+}
+
+/*友情链接*/
+.friend-link {
+  padding: 0 5vw;
+  background-color: #fff;
+}
+
+.friend-p {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.link {
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  grid-template-rows: 1fr 1fr;
+}
+
+.link li {
+  padding: 10px 0;
+  font-size: 14px;
+  color: #999999;
+}
