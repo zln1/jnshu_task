@@ -185,6 +185,15 @@ ul.menu-group li:hover {
     background-color: #cccccc;
 }
 
+.step-outer:hover .step-icon .coin {
+    background-color: #ff7f02;
+}
+.step-outer:hover .flow-name {
+    color: #ff7f02;
+}
+
+
+
 div.step-icon {
     display: flex;
     align-items: center;
@@ -221,6 +230,10 @@ div.step-outer {
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+div.step-outer:hover {
+
 }
 
 
