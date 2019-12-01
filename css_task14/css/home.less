@@ -1,5 +1,63 @@
 @import "base.css";
 
+@media screen and(max-width: 1350px) {
+  .hm-top {
+    grid-template-columns: 1fr !important;
+  }
+
+  .how-study {
+    grid-template-columns: repeat(3, 1fr) !important;
+  }
+
+  .user-outer {
+    display: grid !important;
+  }
+
+  .banner-user {
+    width: auto !important;
+  }
+
+  .partner {
+    grid-template-columns: 1fr !important;
+  }
+
+  .hm-top-count {
+    align-items: center;
+    border-left: none !important;
+
+  }
+
+}
+
+@media screen and (max-width: 1000px) {
+  .how-study {
+    grid-template-columns: repeat(2, 1fr) !important;
+  }
+
+  ul.link {
+    grid-template-columns: repeat(5, 1fr);
+    justify-items: center !important;
+  }
+
+
+}
+
+@media screen and (max-width: 720px) {
+  .how-study {
+    grid-template-columns: 1fr !important;
+  }
+
+  ul.link {
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center !important;
+  }
+
+  .user-outer {
+    grid-template-columns: 1fr !important;
+  }
+
+
+}
 
 /*banner---轮播图*/
 
@@ -15,6 +73,7 @@ header {
 .viewport {
   position: relative;
   overflow: hidden;
+  height: 31vw;
 }
 
 
@@ -30,6 +89,7 @@ input[type="radio"] {
   width: 0;
   height: 0;
   position: absolute;
+  bottom: 0;
 }
 
 
@@ -66,13 +126,14 @@ input[type="radio"] {
 .wrap {
   position: relative;
   width: 500vw;
+  height: 100%;
   overflow: hidden;
 }
 
 .wrap img {
   display: inline-block;
   width: 100vw;
-  height: auto;
+  height: 100%;
   float: left;
 }
 
@@ -181,6 +242,7 @@ input[type="radio"] {
 
 /*banner---轮播图     end*/
 
+
 /*home-main */
 .home-main {
   margin: 165px 5vw;
@@ -191,10 +253,9 @@ input[type="radio"] {
   display: grid;
   grid-template-columns: 17fr 17fr 17fr 13fr;
   grid-column-gap: 2vw;
-  margin: 0 auto;
+  margin-bottom: 160px;
   /*margin: 160px 18.5%;*/
   /*margin: 160px 15%;*/
-
 }
 
 .hm-top-one {
@@ -236,6 +297,7 @@ input[type="radio"] {
 
   text-align: center;
   font-size: 18px;
+  font-weight: bold;
 }
 
 .how-study {
@@ -250,7 +312,7 @@ input[type="radio"] {
 .study-step {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 
 .step-numb {
@@ -290,13 +352,237 @@ input[type="radio"] {
 }
 
 .banner-user {
+  position: relative;
   width: 1247px;
   margin: 0 auto;
+
+  label {
+    z-index: 1000;
+    display: inline-block;
+    width: 13px;
+    height: 13px;
+    border: 1px solid #ecebeb;
+    border-radius: 100%;
+    margin-left: 3px;
+    margin-top: 23px;
+  }
+
+  #b1:checked ~ .icon-banner label[for="b1"] {
+    background-color: blue;
+  }
+
+  #b2:checked ~ .icon-banner label[for="b2"] {
+    background-color: blue;
+  }
+
+  #b3:checked ~ .icon-banner label[for="b3"] {
+    background-color: blue;
+  }
+
+  #b4:checked ~ .icon-banner label[for="b4"] {
+    background-color: blue;
+  }
+
+
+  #b1:checked ~ .user-outer1 {
+    opacity: 1;
+    transition: 1s linear;
+  }
+
+  #b1:checked ~ .user-outer2 {
+    opacity: 0;
+    transition: 1s linear;
+  }
+
+  #b1:checked ~ .user-outer3 {
+    opacity: 0;
+    transition: 1s linear;
+  }
+
+  #b1:checked ~ .user-outer4 {
+    opacity: 0;
+    transition: 1s linear;
+  }
+
+
+  #b2:checked ~ .user-outer2 {
+    opacity: 1;
+    transition: 1s linear;
+  }
+
+  #b2:checked ~ .user-outer1 {
+    opacity: 0;
+    transition: 1s linear;
+  }
+
+  #b2:checked ~ .user-outer3 {
+    opacity: 0;
+    transition: 1s linear;
+  }
+
+  #b2:checked ~ .user-outer4 {
+    opacity: 0;
+    transition: 1s linear;
+  }
+
+
+  #b3:checked ~ .user-outer3 {
+    opacity: 1;
+    transition: 1s linear;
+  }
+
+  #b3:checked ~ .user-outer1 {
+    opacity: 0;
+    transition: 1s linear;
+  }
+
+  #b3:checked ~ .user-outer2 {
+    opacity: 0;
+    transition: 1s linear;
+  }
+
+  #b3:checked ~ .user-outer4 {
+    opacity: 0;
+    transition: 1s linear;
+  }
+
+
+  #b4:checked ~ .user-outer4 {
+    opacity: 1;
+    transition: 1s linear;
+  }
+
+  #b4:checked ~ .user-outer1 {
+    opacity: 0;
+    transition: 1s linear;
+  }
+
+  #b4:checked ~ .user-outer2 {
+    opacity: 0;
+    transition: 1s linear;
+  }
+
+  #b4:checked ~ .user-outer3 {
+    opacity: 0;
+    transition: 1s linear;
+  }
+
+
 }
 
-.user-outer {
+//.ani1 {
+//  animation: user1 20s linear infinite normal;
+//}
+//.ani2 {
+//  animation: user2 20s linear infinite normal;
+//}
+//.ani3 {
+//  animation: user3 20s linear infinite normal;
+//}
+//.ani4 {
+//  animation: user4 20s linear infinite normal;
+//}
 
+@keyframes user1 {
+  0% {
+    opacity: 0;
+  }
+  5% {
+    opacity: 1;
+  }
+  20% {
+    opacity: 1;
+  }
+  25% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  75% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
 }
+@keyframes user2 {
+  0% {
+    opacity: 0;
+  }
+  25% {
+    opacity: 0;
+  }
+  30% {
+    opacity: 1;
+  }
+
+  45% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  75% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes user3 {
+  0% {
+    opacity: 0;
+  }
+  25% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  55% {
+    opacity: 1;
+  }
+  70% {
+    opacity: 1;
+  }
+  75% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes user4 {
+  0% {
+    opacity: 0;
+  }
+  25% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  75% {
+    opacity: 0;
+  }
+  80% {
+    opacity: 1;
+  }
+  95% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+
+
+
+
+
 
 .user {
   display: inline-block;
@@ -325,6 +611,46 @@ input[type="radio"] {
   color: #999999;
 }
 
+/* 优秀学员轮播  */
+.hidden-user {
+  position: absolute;
+  top: 0;
+  opacity: 0;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+
+
+.style-icon::before {
+  @wh: 2vw;
+  display: inline-block;
+  width: @wh;
+  height: @wh;
+  border-radius: 50%;
+  border: 1px solid #fff;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  content: "";
+}
+
+
+.user-outer {
+
+  display: block;
+  grid-template-columns: repeat(2, 1fr);
+  grid-row-gap: 3vw;
+
+  justify-items: center;
+  width: 100%;
+
+}
+
+.icon-banner {
+  display: flex;
+  justify-content: center;
+}
+
+
 /*战略合作企业*/
 .partner-p {
   margin-top: 80px;
@@ -347,7 +673,7 @@ input[type="radio"] {
   align-items: center;
   justify-content: center;
   width: 100%;
-  height: 100%;
+  min-height: 200px;
 }
 
 .part-outer:hover {
