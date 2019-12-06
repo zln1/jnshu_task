@@ -820,6 +820,7 @@ header .menu {
   display: flex;
   border-bottom: 1px solid #999;
 }
+
 header .menu select {
   font-size: 0.82em;
   text-align: center;
