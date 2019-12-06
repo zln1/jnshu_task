@@ -1,0 +1,965 @@
+/*  color */
+/*font-size*/
+/*font-size-end*/
+/*   nav  */
+@media screen and (min-width: 290px) and (max-width: 310px) {
+  :root {
+    font-size: 8.33333333px !important;
+  }
+  .icon-date {
+    vertical-align: -4.66666667px !important;
+    transform: scale(0.41666667) !important;
+  }
+  .icon-address {
+    vertical-align: -5.08333333px !important;
+    transform: scale(0.41666667) !important;
+  }
+  .icon-write {
+    transform: scale(0.41666667) !important;
+  }
+  .icon-my {
+    transform: scale(0.41666667) !important;
+  }
+  .icon-home {
+    transform: scale(0.41666667) !important;
+  }
+  .row {
+    padding: 11.25px 12.5px !important;
+  }
+  .btn-icon {
+    width: 6.25px !important;
+    height: 6.25px !important;
+    border-top: 1.66666667px solid #5fc0cd !important;
+    border-left: 1.66666667px solid #5fc0cd !important;
+    transform: rotate(135deg) !important;
+  }
+  footer {
+    height: 39.16666667px !important;
+    min-height: 50px;
+  }
+}
+@media screen and (min-width: 310px) and (max-width: 330px) {
+  :root {
+    font-size: 8.88888889px !important;
+  }
+  .icon-date {
+    vertical-align: -4.77777778px !important;
+    transform: scale(0.44444444) !important;
+  }
+  .icon-address {
+    vertical-align: -5.22222222px !important;
+    transform: scale(0.44444444) !important;
+  }
+  .icon-write {
+    transform: scale(0.44444444) !important;
+  }
+  .icon-my {
+    transform: scale(0.44444444) !important;
+  }
+  .icon-home {
+    transform: scale(0.44444444) !important;
+  }
+  .row {
+    padding: 12px 13.33333333px !important;
+  }
+  .btn-icon {
+    width: 6.66666667px !important;
+    height: 6.66666667px !important;
+    border-top: 1.77777778px solid #5fc0cd !important;
+    border-left: 1.77777778px solid #5fc0cd !important;
+    transform: rotate(135deg) !important;
+  }
+  footer {
+    height: 41.77777778px !important;
+    min-height: 50px;
+  }
+}
+@media screen and (min-width: 330px) and (max-width: 350px) {
+  :root {
+    font-size: 9.44444444px !important;
+  }
+  .icon-date {
+    vertical-align: -4.88888889px !important;
+    transform: scale(0.47222222) !important;
+  }
+  .icon-address {
+    vertical-align: -5.36111111px !important;
+    transform: scale(0.47222222) !important;
+  }
+  .icon-write {
+    transform: scale(0.47222222) !important;
+  }
+  .icon-my {
+    transform: scale(0.47222222) !important;
+  }
+  .icon-home {
+    transform: scale(0.47222222) !important;
+  }
+  .row {
+    padding: 12.75px 14.16666667px !important;
+  }
+  .btn-icon {
+    width: 7.08333333px !important;
+    height: 7.08333333px !important;
+    border-top: 1.88888889px solid #5fc0cd !important;
+    border-left: 1.88888889px solid #5fc0cd !important;
+    transform: rotate(135deg) !important;
+  }
+  footer {
+    height: 44.38888889px !important;
+    min-height: 50px;
+  }
+}
+@media screen and (min-width: 350px) and (max-width: 370px) {
+  :root {
+    font-size: 10px !important;
+  }
+  .icon-date {
+    vertical-align: -5px !important;
+    transform: scale(0.5) !important;
+  }
+  .icon-address {
+    vertical-align: -5.5px !important;
+    transform: scale(0.5) !important;
+  }
+  .icon-write {
+    transform: scale(0.5) !important;
+  }
+  .icon-my {
+    transform: scale(0.5) !important;
+  }
+  .icon-home {
+    transform: scale(0.5) !important;
+  }
+  .row {
+    padding: 13.5px 15px !important;
+  }
+  .btn-icon {
+    width: 7.5px !important;
+    height: 7.5px !important;
+    border-top: 2px solid #5fc0cd !important;
+    border-left: 2px solid #5fc0cd !important;
+    transform: rotate(135deg) !important;
+  }
+  footer {
+    height: 47px !important;
+    min-height: 50px;
+  }
+}
+@media screen and (min-width: 370px) and (max-width: 390px) {
+  :root {
+    font-size: 10.55555556px !important;
+  }
+  .icon-date {
+    vertical-align: -5.11111111px !important;
+    transform: scale(0.52777778) !important;
+  }
+  .icon-address {
+    vertical-align: -5.63888889px !important;
+    transform: scale(0.52777778) !important;
+  }
+  .icon-write {
+    transform: scale(0.52777778) !important;
+  }
+  .icon-my {
+    transform: scale(0.52777778) !important;
+  }
+  .icon-home {
+    transform: scale(0.52777778) !important;
+  }
+  .row {
+    padding: 14.25px 15.83333333px !important;
+  }
+  .btn-icon {
+    width: 7.91666667px !important;
+    height: 7.91666667px !important;
+    border-top: 2.11111111px solid #5fc0cd !important;
+    border-left: 2.11111111px solid #5fc0cd !important;
+    transform: rotate(135deg) !important;
+  }
+  footer {
+    height: 49.61111111px !important;
+    min-height: 50px;
+  }
+}
+@media screen and (min-width: 390px) and (max-width: 410px) {
+  :root {
+    font-size: 11.11111111px !important;
+  }
+  .icon-date {
+    vertical-align: -5.22222222px !important;
+    transform: scale(0.55555556) !important;
+  }
+  .icon-address {
+    vertical-align: -5.77777778px !important;
+    transform: scale(0.55555556) !important;
+  }
+  .icon-write {
+    transform: scale(0.55555556) !important;
+  }
+  .icon-my {
+    transform: scale(0.55555556) !important;
+  }
+  .icon-home {
+    transform: scale(0.55555556) !important;
+  }
+  .row {
+    padding: 15px 16.66666667px !important;
+  }
+  .btn-icon {
+    width: 8.33333333px !important;
+    height: 8.33333333px !important;
+    border-top: 2.22222222px solid #5fc0cd !important;
+    border-left: 2.22222222px solid #5fc0cd !important;
+    transform: rotate(135deg) !important;
+  }
+  footer {
+    height: 52.22222222px !important;
+    min-height: 50px;
+  }
+}
+@media screen and (min-width: 410px) and (max-width: 430px) {
+  :root {
+    font-size: 11.66666667px !important;
+  }
+  .icon-date {
+    vertical-align: -5.33333333px !important;
+    transform: scale(0.58333333) !important;
+  }
+  .icon-address {
+    vertical-align: -5.91666667px !important;
+    transform: scale(0.58333333) !important;
+  }
+  .icon-write {
+    transform: scale(0.58333333) !important;
+  }
+  .icon-my {
+    transform: scale(0.58333333) !important;
+  }
+  .icon-home {
+    transform: scale(0.58333333) !important;
+  }
+  .row {
+    padding: 15.75px 17.5px !important;
+  }
+  .btn-icon {
+    width: 8.75px !important;
+    height: 8.75px !important;
+    border-top: 2.33333333px solid #5fc0cd !important;
+    border-left: 2.33333333px solid #5fc0cd !important;
+    transform: rotate(135deg) !important;
+  }
+  footer {
+    height: 54.83333333px !important;
+    min-height: 50px;
+  }
+}
+@media screen and (min-width: 430px) and (max-width: 450px) {
+  :root {
+    font-size: 12.22222222px !important;
+  }
+  .icon-date {
+    vertical-align: -5.44444444px !important;
+    transform: scale(0.61111111) !important;
+  }
+  .icon-address {
+    vertical-align: -6.05555556px !important;
+    transform: scale(0.61111111) !important;
+  }
+  .icon-write {
+    transform: scale(0.61111111) !important;
+  }
+  .icon-my {
+    transform: scale(0.61111111) !important;
+  }
+  .icon-home {
+    transform: scale(0.61111111) !important;
+  }
+  .row {
+    padding: 16.5px 18.33333333px !important;
+  }
+  .btn-icon {
+    width: 9.16666667px !important;
+    height: 9.16666667px !important;
+    border-top: 2.44444444px solid #5fc0cd !important;
+    border-left: 2.44444444px solid #5fc0cd !important;
+    transform: rotate(135deg) !important;
+  }
+  footer {
+    height: 57.44444444px !important;
+    min-height: 50px;
+  }
+}
+@media screen and (min-width: 450px) and (max-width: 470px) {
+  :root {
+    font-size: 12.77777778px !important;
+  }
+  .icon-date {
+    vertical-align: -5.55555556px !important;
+    transform: scale(0.63888889) !important;
+  }
+  .icon-address {
+    vertical-align: -6.19444444px !important;
+    transform: scale(0.63888889) !important;
+  }
+  .icon-write {
+    transform: scale(0.63888889) !important;
+  }
+  .icon-my {
+    transform: scale(0.63888889) !important;
+  }
+  .icon-home {
+    transform: scale(0.63888889) !important;
+  }
+  .row {
+    padding: 17.25px 19.16666667px !important;
+  }
+  .btn-icon {
+    width: 9.58333333px !important;
+    height: 9.58333333px !important;
+    border-top: 2.55555556px solid #5fc0cd !important;
+    border-left: 2.55555556px solid #5fc0cd !important;
+    transform: rotate(135deg) !important;
+  }
+  footer {
+    height: 60.05555556px !important;
+    min-height: 50px;
+  }
+}
+@media screen and (min-width: 470px) and (max-width: 490px) {
+  :root {
+    font-size: 13.33333333px !important;
+  }
+  .icon-date {
+    vertical-align: -5.66666667px !important;
+    transform: scale(0.66666667) !important;
+  }
+  .icon-address {
+    vertical-align: -6.33333333px !important;
+    transform: scale(0.66666667) !important;
+  }
+  .icon-write {
+    transform: scale(0.66666667) !important;
+  }
+  .icon-my {
+    transform: scale(0.66666667) !important;
+  }
+  .icon-home {
+    transform: scale(0.66666667) !important;
+  }
+  .row {
+    padding: 18px 20px !important;
+  }
+  .btn-icon {
+    width: 10px !important;
+    height: 10px !important;
+    border-top: 2.66666667px solid #5fc0cd !important;
+    border-left: 2.66666667px solid #5fc0cd !important;
+    transform: rotate(135deg) !important;
+  }
+  footer {
+    height: 62.66666667px !important;
+    min-height: 50px;
+  }
+}
+@media screen and (min-width: 490px) and (max-width: 510px) {
+  :root {
+    font-size: 13.88888889px !important;
+  }
+  .icon-date {
+    vertical-align: -5.77777778px !important;
+    transform: scale(0.69444444) !important;
+  }
+  .icon-address {
+    vertical-align: -6.47222222px !important;
+    transform: scale(0.69444444) !important;
+  }
+  .icon-write {
+    transform: scale(0.69444444) !important;
+  }
+  .icon-my {
+    transform: scale(0.69444444) !important;
+  }
+  .icon-home {
+    transform: scale(0.69444444) !important;
+  }
+  .row {
+    padding: 18.75px 20.83333333px !important;
+  }
+  .btn-icon {
+    width: 10.41666667px !important;
+    height: 10.41666667px !important;
+    border-top: 2.77777778px solid #5fc0cd !important;
+    border-left: 2.77777778px solid #5fc0cd !important;
+    transform: rotate(135deg) !important;
+  }
+  footer {
+    height: 65.27777778px !important;
+    min-height: 50px;
+  }
+}
+@media screen and (min-width: 510px) and (max-width: 530px) {
+  :root {
+    font-size: 14.44444444px !important;
+  }
+  .icon-date {
+    vertical-align: -5.88888889px !important;
+    transform: scale(0.72222222) !important;
+  }
+  .icon-address {
+    vertical-align: -6.61111111px !important;
+    transform: scale(0.72222222) !important;
+  }
+  .icon-write {
+    transform: scale(0.72222222) !important;
+  }
+  .icon-my {
+    transform: scale(0.72222222) !important;
+  }
+  .icon-home {
+    transform: scale(0.72222222) !important;
+  }
+  .row {
+    padding: 19.5px 21.66666667px !important;
+  }
+  .btn-icon {
+    width: 10.83333333px !important;
+    height: 10.83333333px !important;
+    border-top: 2.88888889px solid #5fc0cd !important;
+    border-left: 2.88888889px solid #5fc0cd !important;
+    transform: rotate(135deg) !important;
+  }
+  footer {
+    height: 67.88888889px !important;
+    min-height: 50px;
+  }
+}
+@media screen and (min-width: 530px) and (max-width: 550px) {
+  :root {
+    font-size: 15px !important;
+  }
+  .icon-date {
+    vertical-align: -6px !important;
+    transform: scale(0.75) !important;
+  }
+  .icon-address {
+    vertical-align: -6.75px !important;
+    transform: scale(0.75) !important;
+  }
+  .icon-write {
+    transform: scale(0.75) !important;
+  }
+  .icon-my {
+    transform: scale(0.75) !important;
+  }
+  .icon-home {
+    transform: scale(0.75) !important;
+  }
+  .row {
+    padding: 20.25px 22.5px !important;
+  }
+  .btn-icon {
+    width: 11.25px !important;
+    height: 11.25px !important;
+    border-top: 3px solid #5fc0cd !important;
+    border-left: 3px solid #5fc0cd !important;
+    transform: rotate(135deg) !important;
+  }
+  footer {
+    height: 70.5px !important;
+    min-height: 50px;
+  }
+}
+@media screen and (min-width: 550px) and (max-width: 570px) {
+  :root {
+    font-size: 15.55555556px !important;
+  }
+  .icon-date {
+    vertical-align: -6.11111111px !important;
+    transform: scale(0.77777778) !important;
+  }
+  .icon-address {
+    vertical-align: -6.88888889px !important;
+    transform: scale(0.77777778) !important;
+  }
+  .icon-write {
+    transform: scale(0.77777778) !important;
+  }
+  .icon-my {
+    transform: scale(0.77777778) !important;
+  }
+  .icon-home {
+    transform: scale(0.77777778) !important;
+  }
+  .row {
+    padding: 21px 23.33333333px !important;
+  }
+  .btn-icon {
+    width: 11.66666667px !important;
+    height: 11.66666667px !important;
+    border-top: 3.11111111px solid #5fc0cd !important;
+    border-left: 3.11111111px solid #5fc0cd !important;
+    transform: rotate(135deg) !important;
+  }
+  footer {
+    height: 73.11111111px !important;
+    min-height: 50px;
+  }
+}
+@media screen and (min-width: 570px) and (max-width: 590px) {
+  :root {
+    font-size: 16.11111111px !important;
+  }
+  .icon-date {
+    vertical-align: -6.22222222px !important;
+    transform: scale(0.80555556) !important;
+  }
+  .icon-address {
+    vertical-align: -7.02777778px !important;
+    transform: scale(0.80555556) !important;
+  }
+  .icon-write {
+    transform: scale(0.80555556) !important;
+  }
+  .icon-my {
+    transform: scale(0.80555556) !important;
+  }
+  .icon-home {
+    transform: scale(0.80555556) !important;
+  }
+  .row {
+    padding: 21.75px 24.16666667px !important;
+  }
+  .btn-icon {
+    width: 12.08333333px !important;
+    height: 12.08333333px !important;
+    border-top: 3.22222222px solid #5fc0cd !important;
+    border-left: 3.22222222px solid #5fc0cd !important;
+    transform: rotate(135deg) !important;
+  }
+  footer {
+    height: 75.72222222px !important;
+    min-height: 50px;
+  }
+}
+@media screen and (min-width: 590px) and (max-width: 610px) {
+  :root {
+    font-size: 16.66666667px !important;
+  }
+  .icon-date {
+    vertical-align: -6.33333333px !important;
+    transform: scale(0.83333333) !important;
+  }
+  .icon-address {
+    vertical-align: -7.16666667px !important;
+    transform: scale(0.83333333) !important;
+  }
+  .icon-write {
+    transform: scale(0.83333333) !important;
+  }
+  .icon-my {
+    transform: scale(0.83333333) !important;
+  }
+  .icon-home {
+    transform: scale(0.83333333) !important;
+  }
+  .row {
+    padding: 22.5px 25px !important;
+  }
+  .btn-icon {
+    width: 12.5px !important;
+    height: 12.5px !important;
+    border-top: 3.33333333px solid #5fc0cd !important;
+    border-left: 3.33333333px solid #5fc0cd !important;
+    transform: rotate(135deg) !important;
+  }
+  footer {
+    height: 78.33333333px !important;
+    min-height: 50px;
+  }
+}
+@media screen and (min-width: 610px) and (max-width: 630px) {
+  :root {
+    font-size: 17.22222222px !important;
+  }
+  .icon-date {
+    vertical-align: -6.44444444px !important;
+    transform: scale(0.86111111) !important;
+  }
+  .icon-address {
+    vertical-align: -7.30555556px !important;
+    transform: scale(0.86111111) !important;
+  }
+  .icon-write {
+    transform: scale(0.86111111) !important;
+  }
+  .icon-my {
+    transform: scale(0.86111111) !important;
+  }
+  .icon-home {
+    transform: scale(0.86111111) !important;
+  }
+  .row {
+    padding: 23.25px 25.83333333px !important;
+  }
+  .btn-icon {
+    width: 12.91666667px !important;
+    height: 12.91666667px !important;
+    border-top: 3.44444444px solid #5fc0cd !important;
+    border-left: 3.44444444px solid #5fc0cd !important;
+    transform: rotate(135deg) !important;
+  }
+  footer {
+    height: 80.94444444px !important;
+    min-height: 50px;
+  }
+}
+@media screen and (min-width: 630px) and (max-width: 650px) {
+  :root {
+    font-size: 17.77777778px !important;
+  }
+  .icon-date {
+    vertical-align: -6.55555556px !important;
+    transform: scale(0.88888889) !important;
+  }
+  .icon-address {
+    vertical-align: -7.44444444px !important;
+    transform: scale(0.88888889) !important;
+  }
+  .icon-write {
+    transform: scale(0.88888889) !important;
+  }
+  .icon-my {
+    transform: scale(0.88888889) !important;
+  }
+  .icon-home {
+    transform: scale(0.88888889) !important;
+  }
+  .row {
+    padding: 24px 26.66666667px !important;
+  }
+  .btn-icon {
+    width: 13.33333333px !important;
+    height: 13.33333333px !important;
+    border-top: 3.55555556px solid #5fc0cd !important;
+    border-left: 3.55555556px solid #5fc0cd !important;
+    transform: rotate(135deg) !important;
+  }
+  footer {
+    height: 83.55555556px !important;
+    min-height: 50px;
+  }
+}
+@media screen and (min-width: 650px) and (max-width: 670px) {
+  :root {
+    font-size: 18.33333333px !important;
+  }
+  .icon-date {
+    vertical-align: -6.66666667px !important;
+    transform: scale(0.91666667) !important;
+  }
+  .icon-address {
+    vertical-align: -7.58333333px !important;
+    transform: scale(0.91666667) !important;
+  }
+  .icon-write {
+    transform: scale(0.91666667) !important;
+  }
+  .icon-my {
+    transform: scale(0.91666667) !important;
+  }
+  .icon-home {
+    transform: scale(0.91666667) !important;
+  }
+  .row {
+    padding: 24.75px 27.5px !important;
+  }
+  .btn-icon {
+    width: 13.75px !important;
+    height: 13.75px !important;
+    border-top: 3.66666667px solid #5fc0cd !important;
+    border-left: 3.66666667px solid #5fc0cd !important;
+    transform: rotate(135deg) !important;
+  }
+  footer {
+    height: 86.16666667px !important;
+    min-height: 50px;
+  }
+}
+@media screen and (min-width: 670px) and (max-width: 690px) {
+  :root {
+    font-size: 18.88888889px !important;
+  }
+  .icon-date {
+    vertical-align: -6.77777778px !important;
+    transform: scale(0.94444444) !important;
+  }
+  .icon-address {
+    vertical-align: -7.72222222px !important;
+    transform: scale(0.94444444) !important;
+  }
+  .icon-write {
+    transform: scale(0.94444444) !important;
+  }
+  .icon-my {
+    transform: scale(0.94444444) !important;
+  }
+  .icon-home {
+    transform: scale(0.94444444) !important;
+  }
+  .row {
+    padding: 25.5px 28.33333333px !important;
+  }
+  .btn-icon {
+    width: 14.16666667px !important;
+    height: 14.16666667px !important;
+    border-top: 3.77777778px solid #5fc0cd !important;
+    border-left: 3.77777778px solid #5fc0cd !important;
+    transform: rotate(135deg) !important;
+  }
+  footer {
+    height: 88.77777778px !important;
+    min-height: 50px;
+  }
+}
+@media screen and (min-width: 690px) and (max-width: 710px) {
+  :root {
+    font-size: 19.44444444px !important;
+  }
+  .icon-date {
+    vertical-align: -6.88888889px !important;
+    transform: scale(0.97222222) !important;
+  }
+  .icon-address {
+    vertical-align: -7.86111111px !important;
+    transform: scale(0.97222222) !important;
+  }
+  .icon-write {
+    transform: scale(0.97222222) !important;
+  }
+  .icon-my {
+    transform: scale(0.97222222) !important;
+  }
+  .icon-home {
+    transform: scale(0.97222222) !important;
+  }
+  .row {
+    padding: 26.25px 29.16666667px !important;
+  }
+  .btn-icon {
+    width: 14.58333333px !important;
+    height: 14.58333333px !important;
+    border-top: 3.88888889px solid #5fc0cd !important;
+    border-left: 3.88888889px solid #5fc0cd !important;
+    transform: rotate(135deg) !important;
+  }
+  footer {
+    height: 91.38888889px !important;
+    min-height: 50px;
+  }
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+body,
+html {
+  width: 100%;
+  height: 100%;
+}
+:root {
+  font-size: 20px;
+}
+header {
+  z-index: 100;
+  width: 100%;
+  min-height: 170px;
+  position: fixed;
+  top: 0;
+  font-size: 1.7em;
+}
+header .nav {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 2.5956em;
+  background-color: #5fc0cd;
+}
+header .nav button {
+  height: 2.06em;
+  width: 20vw;
+  border: 0 none;
+  border-radius: 5px;
+  font-size: 1em;
+}
+header .nav button:focus {
+  z-index: 1;
+  outline: 0 none;
+}
+header .nav .btn-left {
+  position: relative;
+  left: 0.4vw;
+  color: #fff;
+  background-color: #55a8b3;
+}
+header .nav .btn-right {
+  position: relative;
+  right: 0.4vw;
+  color: #5fc0cd;
+  background-color: #fff;
+}
+header .nav img {
+  position: absolute;
+  top: 50%;
+  right: 4.2vw;
+  transform: translate(0, -50%);
+  height: 50%;
+}
+header .menu {
+  display: flex;
+  border-bottom: 1px solid #999;
+}
+header .menu select {
+  font-size: 0.82em;
+  text-align: center;
+  text-align-last: center;
+  height: 2.361996em;
+  width: 33.33%;
+  color: #999;
+  border: 0 none;
+  border-right: 1px solid #999;
+  background-color: #fff;
+}
+main {
+  z-index: -100;
+  margin-top: 4.957596em;
+  margin-bottom: 4.957596em;
+  font-size: 1.4em;
+}
+main .row {
+  padding: 27px 30px;
+  color: #999;
+  border-bottom: 1px solid #e1e5e7;
+}
+main .row .icon-img {
+  display: inline-block;
+  background: url("../img/css_sprites.png") no-repeat;
+}
+main .row .row-1 {
+  display: flex;
+  align-items: center;
+  font-size: 1em;
+  margin-bottom: -10px;
+}
+main .row .row-1 .icon-date {
+  margin-right: 10px;
+  background-position: -124px -70px;
+  width: 24px;
+  height: 24px;
+  transform: scale(1);
+}
+main .row .row-2 {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 28px;
+  margin-top: 0.86em;
+  margin-bottom: 0.71em;
+  color: #333;
+}
+main .row .row-2 span.row2-left {
+  max-width: 40vw;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-size: 1em;
+}
+main .row .row-2 span.row2-right {
+  font-size: 1.07em;
+  color: #e63b0e;
+}
+main .row .row-2 div.btn-icon {
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  border-top: 4px solid #5fc0cd;
+  border-left: 4px solid #5fc0cd;
+  transform: rotate(135deg);
+}
+main .row .row-3 {
+  font-size: 0.93em;
+  display: flex;
+  align-items: center;
+  margin-top: -10px;
+}
+main .row .row-3 .icon-address {
+  margin-right: 10px;
+  background-position: -72px -124px;
+  width: 19px;
+  height: 23px;
+  transform: scale(1);
+}
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  font-size: 1em;
+  background-color: #f8fafb;
+  color: #5fc0cd;
+}
+footer .icon-img {
+  display: inline-block;
+  background: url("../img/css_sprites.png") no-repeat;
+}
+footer .icon-home {
+  display: block;
+  background-position: -124px -10px;
+  width: 46px;
+  height: 40px;
+  transform: scale(1);
+}
+footer .icon-write {
+  background-position: -10px -10px;
+  width: 94px;
+  height: 94px;
+  transform: scale(1);
+}
+footer .foot-left {
+  display: flex;
+  flex-direction: column ;
+  align-items: center;
+  justify-content: space-around;
+  height: 100%;
+}
+footer .foot-right {
+  display: flex;
+  flex-direction: column ;
+  align-items: center;
+  justify-content: space-around;
+  color: #999;
+  height: 100%;
+}
+footer .foot-right .icon-my {
+  display: block;
+  background-position: -10px -124px;
+  width: 42px;
+  height: 41px;
+  transform: scale(1);
+}
+footer a {
+  text-decoration: none;
+}
+footer a:link {
+  color: #fff;
+}
+footer a:hover {
+  color: #fff;
+}
+footer a:visited {
+  color: #fff;
+}
