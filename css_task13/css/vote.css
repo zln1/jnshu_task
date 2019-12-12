@@ -100,12 +100,18 @@ body {
   font-size: 3.1em;
 }
 .top-outer .voice {
-  display: flex;
+  display: grid;
+  grid-template-areas: "a b";
+  grid-template-columns: 7fr 1fr;
   align-items: center;
   justify-content: space-between;
   padding-left: 30px;
   height: 35%;
   background-color: #b9e9f5;
+}
+.top-outer .voice .controls {
+  display: flex;
+  justify-content: center;
 }
 .top-outer .voice .wd {
   grid-area: a;
@@ -115,14 +121,14 @@ body {
 .top-outer .voice .sprites {
   display: inline-block;
   background: url("../img/sprites.png") no-repeat;
-  background-size: 8.77em 8.27em;
+  background-size: 10.524em 9.924em;
 }
 .top-outer .voice .icon-spr-11 {
-  width: 2.36em;
-  height: 2.36em;
-  background-position: -0.45em -0.45em;
+  width: 2.832em;
+  height: 2.832em;
+  background-position: -0.54em -0.54em;
   grid-area: b;
-  margin-right: 1.6em;
+  margin-right: 10%;
 }
 .top-outer .voice .play-pause {
   border: 0;
@@ -221,7 +227,7 @@ footer .grap {
 footer .vote-btn {
   color: white;
   display: block;
-  margin: 0 auto  ;
+  margin: 0 auto;
   background-color: #fbb435;
   width: 76vmin;
   height: 45.8%;
